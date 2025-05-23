@@ -1,0 +1,4 @@
+﻿import config from 'devextreme/core/config';
+
+const licenseKey = 'ewogICJmb3JtYXQiOiAxLAogICJjdXN0b21lcklkIjogImY2MDE1ZWNmLTJjN2ItNDM0Ni1hZjkyLWE4MTZiZjY1MDg2YSIsCiAgIm1heFZlcnNpb25BbGxvd2VkIjogMjQyCn0=.bJaV57ZsS4KfXYcLrhrVjmxYc2l0MkPkD/damwY0k1Vqj/45jzEiIw10J/cxiOHn2cEDAPlZ3YO9oOf2dRJjSZwG4tiWbu/bb3/Kt48cFBHxyjZ9KJQQCqYvohptKEHLPdaqkw==';
+config({licenseKey});

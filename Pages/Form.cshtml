@@ -1,0 +1,33 @@
+﻿@page
+@model FormModel
+
+@{
+    ViewData["Title"] = "Form";
+}
+<div class="container">
+
+    <h1 class="contact-title">Contact Form</h1>
+    <div>
+        <div class="form">
+            <div id="name"></div>
+            <div id="lastname"></div>
+            <div id="email"></div>
+        </div>
+        <div class="form">
+            <div id="phone"></div>
+            <div id="country"></div>
+            <div id="city"></div>
+        </div>
+
+    </div>
+</div>
+
+@section Scripts
+{
+    <script src="~/assets/form.js" asp-append-version="true"></script>
+}
+
+@section Styles
+{
+    <link rel="stylesheet" href="~/assets/css/form.css"/>
+}

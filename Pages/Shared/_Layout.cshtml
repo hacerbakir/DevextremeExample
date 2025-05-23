@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - DevextremeExample</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    @*<link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/DevextremeExample.styles.css" asp-append-version="true"/>*@
+    <link rel="stylesheet" href="~/assets/css/main.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/assets/css/dx.fluent.saas.dark.css"/>
+    @await RenderSectionAsync("Styles", false)
+</head>
+<body class="dx-viewport dx-theme-fluent dx-theme-fluent-typography dx-color-scheme-saas-dark">
+@Html.AntiForgeryToken()
+<div class="wrapper">
+    <header>
+        <div class="container flex-between">
+            <a class="home-logo flex-between" asp-page="/Index" aria-label="Home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                          d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                </svg>
+                <div>Hacer Bakır</div>
+            </a>
+
+            <a class="page-form" asp-page="/form">
+                Form
+            </a>
+
+        </div>
+
+    </header>
+    <main>@RenderBody()</main>
+    <footer>footer</footer>
+</div>
+
+@*<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>*@
+
+@await RenderSectionAsync("Scripts", false)
+</body>
+</html>

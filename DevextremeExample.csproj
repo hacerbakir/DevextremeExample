@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\dx.fluent.saas.dark.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\dx.fluent.saas.light.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\fonts\Roboto-300.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\fonts\Roboto-300.woff" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\fonts\Roboto-300.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\fonts\Roboto-400.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\fonts\Roboto-400.woff" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\fonts\Roboto-400.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\fonts\Roboto-500.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\fonts\Roboto-500.woff" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\fonts\Roboto-500.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\fonts\Roboto-700.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\fonts\Roboto-700.woff" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\fonts\Roboto-700.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\icons\bootstrap-icons.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\icons\dxicons.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\icons\dxicons.woff" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\icons\dxicons.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\icons\dxiconsfluent.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\icons\dxiconsfluent.woff" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\icons\dxiconsfluent.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\icons\dxiconsmaterial.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\icons\dxiconsmaterial.woff" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\icons\dxiconsmaterial.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\icons\fonts\bootstrap-icons.woff" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\icons\fonts\bootstrap-icons.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\css\main.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\form.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\form.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\index.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\index.js.map" />
+    </ItemGroup>
+
+</Project>

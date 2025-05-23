@@ -1,0 +1,13 @@
+﻿.form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.contact-title{
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}

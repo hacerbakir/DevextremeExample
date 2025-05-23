@@ -1,0 +1,41 @@
+﻿html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+}
+
+header {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid white;
+    a {
+        color: white !important;
+        text-decoration: none !important;
+    }
+}
+
+.container {
+    width: 98vw;
+}
+
+.home-logo {
+    width: 7%;
+}
+.flex-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

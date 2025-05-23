@@ -1,0 +1,413 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\dx.fluent.saas.dark.css",
+      "PackagePath": "staticwebassets\\assets\\css\\dx.fluent.saas.dark.css"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\dx.fluent.saas.light.css",
+      "PackagePath": "staticwebassets\\assets\\css\\dx.fluent.saas.light.css"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\fonts\\Roboto-300.ttf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\Roboto-300.ttf"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\fonts\\Roboto-300.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\Roboto-300.woff"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\fonts\\Roboto-300.woff2",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\Roboto-300.woff2"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\fonts\\Roboto-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\Roboto-400.ttf"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\fonts\\Roboto-400.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\Roboto-400.woff"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\fonts\\Roboto-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\Roboto-400.woff2"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\fonts\\Roboto-500.ttf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\Roboto-500.ttf"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\fonts\\Roboto-500.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\Roboto-500.woff"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\fonts\\Roboto-500.woff2",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\Roboto-500.woff2"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\fonts\\Roboto-700.ttf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\Roboto-700.ttf"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\fonts\\Roboto-700.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\Roboto-700.woff"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\fonts\\Roboto-700.woff2",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\Roboto-700.woff2"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\form.css",
+      "PackagePath": "staticwebassets\\assets\\css\\form.css"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\icons\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\assets\\css\\icons\\bootstrap-icons.css"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\icons\\dxicons.ttf",
+      "PackagePath": "staticwebassets\\assets\\css\\icons\\dxicons.ttf"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\icons\\dxicons.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\icons\\dxicons.woff"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\icons\\dxicons.woff2",
+      "PackagePath": "staticwebassets\\assets\\css\\icons\\dxicons.woff2"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\icons\\dxiconsfluent.ttf",
+      "PackagePath": "staticwebassets\\assets\\css\\icons\\dxiconsfluent.ttf"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\icons\\dxiconsfluent.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\icons\\dxiconsfluent.woff"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\icons\\dxiconsfluent.woff2",
+      "PackagePath": "staticwebassets\\assets\\css\\icons\\dxiconsfluent.woff2"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\icons\\dxiconsmaterial.ttf",
+      "PackagePath": "staticwebassets\\assets\\css\\icons\\dxiconsmaterial.ttf"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\icons\\dxiconsmaterial.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\icons\\dxiconsmaterial.woff"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\icons\\dxiconsmaterial.woff2",
+      "PackagePath": "staticwebassets\\assets\\css\\icons\\dxiconsmaterial.woff2"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\icons\\fonts\\bootstrap-icons.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\icons\\fonts\\bootstrap-icons.woff"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\icons\\fonts\\bootstrap-icons.woff2",
+      "PackagePath": "staticwebassets\\assets\\css\\icons\\fonts\\bootstrap-icons.woff2"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\main.css",
+      "PackagePath": "staticwebassets\\assets\\css\\main.css"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\form.js",
+      "PackagePath": "staticwebassets\\assets\\form.js"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\form.js.map",
+      "PackagePath": "staticwebassets\\assets\\form.js.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\index.js",
+      "PackagePath": "staticwebassets\\assets\\index.js"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\index.js.map",
+      "PackagePath": "staticwebassets\\assets\\index.js.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\devextreme\\dx.all.js",
+      "PackagePath": "staticwebassets\\lib\\devextreme\\dx.all.js"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\devextreme\\dx.light.css",
+      "PackagePath": "staticwebassets\\lib\\devextreme\\dx.light.css"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.DevextremeExample.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.DevextremeExample.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.DevextremeExample.props",
+      "PackagePath": "build\\DevextremeExample.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.DevextremeExample.props",
+      "PackagePath": "buildMultiTargeting\\DevextremeExample.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.DevextremeExample.props",
+      "PackagePath": "buildTransitive\\DevextremeExample.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
