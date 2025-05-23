@@ -1,9 +1,12 @@
 ﻿import '../global';
 import 'devextreme/ui/text_box';
 import 'devextreme/ui/select_box';
-import {DataSource} from "devextreme/common/data";
+import CustomStore from 'devextreme/data/custom_store';
+import {fetchCountries} from "../Helpers/fetch-country";
+import {fetchCity} from "../Helpers/fetch-city";
 
 $(() => {
+
     $('#name').dxTextBox({
         label: 'Name',
         inputAttr: {'aria-label': 'Name'},
@@ -46,47 +49,52 @@ $(() => {
         height: '50',
     }).dxTextBox('instance');
 
-    fetch("https://countriesnow.space/api/v0.1/countries/positions")
-        .then(response => response.json())
-        .then(data => {
-            const countries = data.data;
-            $('#country').dxSelectBox({
-                dataSource: countries,
-                valueExpr: 'long',
-                displayExpr: 'name',
-                width: '30%',
-                height: '50',
-                label: 'Country',
-                inputAttr: {'aria-label': 'Country'},
-                labelMode: "static",
-                stylingMode: "outlined",
-                placeholder: null,
-            })
+    let countries = [];
+    let selectedCountry = null;
+    
+    $('#country').dxSelectBox({
+        dataSource: new CustomStore({
+            key: 'iso2',
+            load: async () => {
+                countries = await fetchCountries();
+                return countries;
+            }
+        }),
+        valueExpr: 'iso2',
+        displayExpr: 'name',
+        width: '30%',
+        height: '50',
+        label: 'Country',
+        inputAttr: {'aria-label': 'Country'},
+        labelMode: "static",
+        stylingMode: "outlined",
+        placeholder: null,
+        onValueChanged: (selection) => {
+            console.log("SELECTİON : ",selection);
+            selectedCountry = countries.find(country => country.iso2 === selection.value)
+            console.log('Country : ', selectedCountry);
+            citySelectBox.option('value', null);
+            citySelectBox.getDataSource().load();
+        }
+    }).dxSelectBox('instance');
 
+    const citySelectBox = $('#city').dxSelectBox({
+        dataSource: new CustomStore({
+            key: 'name',
+            load: async () => {
 
-        })
-
-    fetch("https://countriesnow.space/api/v0.1/countries/cities", {
-        method: "POST",
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({country: "Turkey"})
-    })
-        .then(res => res.json())
-        .then(data => {
-            const cities = data.data.map(item => ({'name' : item}));
-            
-            $('#city').dxSelectBox({
-                dataSource: cities,
-                valueExpr: 'name',
-                displayExpr: 'name',
-                width: '30%',
-                height: '50',
-                label: 'City',
-                inputAttr: {'aria-label': 'City'},
-                labelMode: "static",
-                stylingMode: "outlined",
-                placeholder: null,
-            })
-        });
-
+                return await fetchCity(selectedCountry.name);
+            }
+        }),
+        valueExpr: 'name',
+        displayExpr: 'name',
+        width: '30%',
+        height: '50',
+        label: 'City',
+        inputAttr: {'aria-label': 'City'},
+        labelMode: "static",
+        stylingMode: "outlined",
+        placeholder: null,
+    }).dxSelectBox('instance');
+    
 })

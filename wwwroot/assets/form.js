@@ -1,6 +1,52 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./Scripts/Helpers/fetch-city.js":
+/*!***************************************!*\
+  !*** ./Scripts/Helpers/fetch-city.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   fetchCity: () => (/* binding */ fetchCity)
+/* harmony export */ });
+async function fetchCity(selectedCountry) {
+    const res = await fetch("https://countriesnow.space/api/v0.1/countries/cities", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({country: `${selectedCountry}` }),
+    });
+    const response = await res.json();
+    console.log(response);
+    return response.data.map(city => ({'name': city}))
+}
+
+/***/ }),
+
+/***/ "./Scripts/Helpers/fetch-country.js":
+/*!******************************************!*\
+  !*** ./Scripts/Helpers/fetch-country.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   fetchCountries: () => (/* binding */ fetchCountries)
+/* harmony export */ });
+async function fetchCountries() {
+    const res = await fetch("https://countriesnow.space/api/v0.1/countries/positions");
+    const response = await res.json();
+    return response.data; 
+}
+
+
+
+
+/***/ }),
+
 /***/ "./Scripts/add-license.js":
 /*!********************************!*\
   !*** ./Scripts/add-license.js ***!
@@ -16211,60 +16257,6 @@ const DataHelperMixin = {
 
 /***/ }),
 
-/***/ "./node_modules/devextreme/esm/__internal/data/m_endpoint_selector.js":
-/*!****************************************************************************!*\
-  !*** ./node_modules/devextreme/esm/__internal/data/m_endpoint_selector.js ***!
-  \****************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _core_errors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core/errors */ "./node_modules/devextreme/esm/core/errors.js");
-/* harmony import */ var _core_utils_window__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/utils/window */ "./node_modules/devextreme/esm/core/utils/window.js");
-/**
- * DevExtreme (esm/__internal/data/m_endpoint_selector.js)
- * Version: 24.2.7
- * Build date: Mon Apr 28 2025
- *
- * Copyright (c) 2012 - 2025 Developer Express Inc. ALL RIGHTS RESERVED
- * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
- */
-
-
-const window = (0,_core_utils_window__WEBPACK_IMPORTED_MODULE_1__.getWindow)();
-let IS_WINJS_ORIGIN;
-let IS_LOCAL_ORIGIN;
-
-function isLocalHostName(url) {
-    return /^(localhost$|127\.)/i.test(url)
-}
-const EndpointSelector = function(config) {
-    this.config = config;
-    IS_WINJS_ORIGIN = "ms-appx:" === window.location.protocol;
-    IS_LOCAL_ORIGIN = isLocalHostName(window.location.hostname)
-};
-EndpointSelector.prototype = {
-    urlFor(key) {
-        const bag = this.config[key];
-        if (!bag) {
-            throw _core_errors__WEBPACK_IMPORTED_MODULE_0__["default"].Error("E0006")
-        }
-        if (bag.production) {
-            if (IS_WINJS_ORIGIN && !Debug.debuggerEnabled || !IS_WINJS_ORIGIN && !IS_LOCAL_ORIGIN) {
-                return bag.production
-            }
-        }
-        return bag.local
-    }
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (EndpointSelector);
-
-
-/***/ }),
-
 /***/ "./node_modules/devextreme/esm/__internal/data/m_errors.js":
 /*!*****************************************************************!*\
   !*** ./node_modules/devextreme/esm/__internal/data/m_errors.js ***!
@@ -16327,144 +16319,6 @@ const handleError = function(error) {
     null === (_errorHandler = errorHandler) || void 0 === _errorHandler || _errorHandler(error)
 };
 const setErrorHandler = handler => errorHandler = handler;
-
-
-/***/ }),
-
-/***/ "./node_modules/devextreme/esm/__internal/data/m_local_store.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/devextreme/esm/__internal/data/m_local_store.js ***!
-  \**********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _common_core_events_core_events_engine__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../common/core/events/core/events_engine */ "./node_modules/devextreme/esm/common/core/events/core/events_engine.js");
-/* harmony import */ var _common_data_array_store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../common/data/array_store */ "./node_modules/devextreme/esm/common/data/array_store.js");
-/* harmony import */ var _common_data_errors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../common/data/errors */ "./node_modules/devextreme/esm/common/data/errors.js");
-/* harmony import */ var _core_class__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../core/class */ "./node_modules/devextreme/esm/core/class.js");
-/* harmony import */ var _core_dom_adapter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../core/dom_adapter */ "./node_modules/devextreme/esm/core/dom_adapter.js");
-/* harmony import */ var _core_utils_window__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../core/utils/window */ "./node_modules/devextreme/esm/core/utils/window.js");
-/**
- * DevExtreme (esm/__internal/data/m_local_store.js)
- * Version: 24.2.7
- * Build date: Mon Apr 28 2025
- *
- * Copyright (c) 2012 - 2025 Developer Express Inc. ALL RIGHTS RESERVED
- * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
- */
-
-
-
-
-
-
-const window = (0,_core_utils_window__WEBPACK_IMPORTED_MODULE_5__.getWindow)();
-const {
-    abstract: abstract
-} = _core_class__WEBPACK_IMPORTED_MODULE_3__["default"];
-const LocalStoreBackend = _core_class__WEBPACK_IMPORTED_MODULE_3__["default"].inherit({
-    ctor(store, storeOptions) {
-        this._store = store;
-        this._dirty = !!storeOptions.data;
-        this.save();
-        const immediate = this._immediate = storeOptions.immediate;
-        const flushInterval = Math.max(100, storeOptions.flushInterval || 1e4);
-        if (!immediate) {
-            const saveProxy = this.save.bind(this);
-            setInterval(saveProxy, flushInterval);
-            _common_core_events_core_events_engine__WEBPACK_IMPORTED_MODULE_0__["default"].on(window, "beforeunload", saveProxy);
-            if (window.cordova) {
-                _core_dom_adapter__WEBPACK_IMPORTED_MODULE_4__["default"].listen(_core_dom_adapter__WEBPACK_IMPORTED_MODULE_4__["default"].getDocument(), "pause", saveProxy, false)
-            }
-        }
-    },
-    notifyChanged() {
-        this._dirty = true;
-        if (this._immediate) {
-            this.save()
-        }
-    },
-    load() {
-        this._store._array = this._loadImpl();
-        this._dirty = false
-    },
-    save() {
-        if (!this._dirty) {
-            return
-        }
-        this._saveImpl(this._store._array);
-        this._dirty = false
-    },
-    _loadImpl: abstract,
-    _saveImpl: abstract
-});
-const DomLocalStoreBackend = LocalStoreBackend.inherit({
-    ctor(store, storeOptions) {
-        const {
-            name: name
-        } = storeOptions;
-        if (!name) {
-            throw _common_data_errors__WEBPACK_IMPORTED_MODULE_2__.errors.Error("E4013")
-        }
-        this._key = `dx-data-localStore-${name}`;
-        this.callBase(store, storeOptions)
-    },
-    _loadImpl() {
-        const raw = window.localStorage.getItem(this._key);
-        if (raw) {
-            return JSON.parse(raw)
-        }
-        return []
-    },
-    _saveImpl(array) {
-        if (!array.length) {
-            window.localStorage.removeItem(this._key)
-        } else {
-            window.localStorage.setItem(this._key, JSON.stringify(array))
-        }
-    }
-});
-const localStoreBackends = {
-    dom: DomLocalStoreBackend
-};
-const LocalStore = _common_data_array_store__WEBPACK_IMPORTED_MODULE_1__["default"].inherit({
-    ctor(options) {
-        if ("string" === typeof options) {
-            options = {
-                name: options
-            }
-        } else {
-            options = options || {}
-        }
-        this.callBase(options);
-        this._backend = new localStoreBackends[options.backend || "dom"](this, options);
-        this._backend.load()
-    },
-    _clearCache() {
-        this._backend.load()
-    },
-    clear() {
-        this.callBase();
-        this._backend.notifyChanged()
-    },
-    _insertImpl(values) {
-        const b = this._backend;
-        return this.callBase(values).done(b.notifyChanged.bind(b))
-    },
-    _updateImpl(key, values) {
-        const b = this._backend;
-        return this.callBase(key, values).done(b.notifyChanged.bind(b))
-    },
-    _removeImpl(key) {
-        const b = this._backend;
-        return this.callBase(key).done(b.notifyChanged.bind(b))
-    }
-}, "local");
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LocalStore);
 
 
 /***/ }),
@@ -17028,1181 +16882,6 @@ function throttleChanges(func, timeout) {
         return throttled.call(this, cache)
     }
 }
-
-
-/***/ }),
-
-/***/ "./node_modules/devextreme/esm/__internal/data/odata/m_context.js":
-/*!************************************************************************!*\
-  !*** ./node_modules/devextreme/esm/__internal/data/odata/m_context.js ***!
-  \************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _common_data_odata_query_adapter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../common/data/odata/query_adapter */ "./node_modules/devextreme/esm/common/data/odata/query_adapter.js");
-/* harmony import */ var _common_data_odata_request_dispatcher__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../common/data/odata/request_dispatcher */ "./node_modules/devextreme/esm/common/data/odata/request_dispatcher.js");
-/* harmony import */ var _common_data_odata_store__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../common/data/odata/store */ "./node_modules/devextreme/esm/common/data/odata/store.js");
-/* harmony import */ var _core_class__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../core/class */ "./node_modules/devextreme/esm/core/class.js");
-/* harmony import */ var _core_utils_deferred__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../core/utils/deferred */ "./node_modules/devextreme/esm/core/utils/deferred.js");
-/* harmony import */ var _core_utils_extend__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../core/utils/extend */ "./node_modules/devextreme/esm/core/utils/extend.js");
-/* harmony import */ var _core_utils_iterator__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../core/utils/iterator */ "./node_modules/devextreme/esm/core/utils/iterator.js");
-/* harmony import */ var _core_utils_type__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../core/utils/type */ "./node_modules/devextreme/esm/core/utils/type.js");
-/* harmony import */ var _m_errors__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../m_errors */ "./node_modules/devextreme/esm/__internal/data/m_errors.js");
-/* harmony import */ var _m_utils__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./m_utils */ "./node_modules/devextreme/esm/__internal/data/odata/m_utils.js");
-/**
- * DevExtreme (esm/__internal/data/odata/m_context.js)
- * Version: 24.2.7
- * Build date: Mon Apr 28 2025
- *
- * Copyright (c) 2012 - 2025 Developer Express Inc. ALL RIGHTS RESERVED
- * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
- */
-
-
-
-
-
-
-
-
-
-
-const ODataContext = _core_class__WEBPACK_IMPORTED_MODULE_3__["default"].inherit({
-    ctor(options) {
-        this._requestDispatcher = new _common_data_odata_request_dispatcher__WEBPACK_IMPORTED_MODULE_1__["default"](options);
-        this._errorHandler = options.errorHandler;
-        (0,_core_utils_iterator__WEBPACK_IMPORTED_MODULE_6__.each)(options.entities || [], ((entityAlias, entityOptions) => {
-            this[entityAlias] = new _common_data_odata_store__WEBPACK_IMPORTED_MODULE_2__["default"]((0,_core_utils_extend__WEBPACK_IMPORTED_MODULE_5__.extend)({}, options, {
-                url: `${this._requestDispatcher.url}/${encodeURIComponent(entityOptions.name||entityAlias)}`
-            }, entityOptions))
-        }))
-    },
-    get(operationName, params) {
-        return this.invoke(operationName, params, "GET")
-    },
-    invoke(operationName) {
-        let params = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-        let httpMethod = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "POST";
-        httpMethod = httpMethod.toLowerCase();
-        const d = new _core_utils_deferred__WEBPACK_IMPORTED_MODULE_4__.Deferred;
-        let url = `${this._requestDispatcher.url}/${encodeURIComponent(operationName)}`;
-        let payload;
-        if (4 === this.version()) {
-            if ("get" === httpMethod) {
-                url = (0,_m_utils__WEBPACK_IMPORTED_MODULE_9__.formatFunctionInvocationUrl)(url, (0,_m_utils__WEBPACK_IMPORTED_MODULE_9__.escapeServiceOperationParams)(params, this.version()));
-                params = null
-            } else if ("post" === httpMethod) {
-                payload = params;
-                params = null
-            }
-        }
-        (0,_core_utils_deferred__WEBPACK_IMPORTED_MODULE_4__.when)(this._requestDispatcher.sendRequest(url, httpMethod, (0,_m_utils__WEBPACK_IMPORTED_MODULE_9__.escapeServiceOperationParams)(params, this.version()), payload)).done((r => {
-            if ((0,_core_utils_type__WEBPACK_IMPORTED_MODULE_7__.isPlainObject)(r) && operationName in r) {
-                r = r[operationName]
-            }
-            d.resolve(r)
-        })).fail(this._errorHandler).fail(_m_errors__WEBPACK_IMPORTED_MODULE_8__.handleError).fail(d.reject);
-        return d.promise()
-    },
-    objectLink(entityAlias, key) {
-        const store = this[entityAlias];
-        if (!store) {
-            throw _m_errors__WEBPACK_IMPORTED_MODULE_8__.errors.Error("E4015", entityAlias)
-        }
-        if (!(0,_core_utils_type__WEBPACK_IMPORTED_MODULE_7__.isDefined)(key)) {
-            return null
-        }
-        return {
-            __metadata: {
-                uri: store._byKeyUrl(key)
-            }
-        }
-    },
-    version() {
-        return this._requestDispatcher.version
-    }
-});
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ODataContext);
-
-
-/***/ }),
-
-/***/ "./node_modules/devextreme/esm/__internal/data/odata/m_query_adapter.js":
-/*!******************************************************************************!*\
-  !*** ./node_modules/devextreme/esm/__internal/data/odata/m_query_adapter.js ***!
-  \******************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   odata: () => (/* binding */ odata)
-/* harmony export */ });
-/* harmony import */ var _common_data_query_adapters__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../common/data/query_adapters */ "./node_modules/devextreme/esm/common/data/query_adapters.js");
-/* harmony import */ var _core_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../core/config */ "./node_modules/devextreme/esm/core/config.js");
-/* harmony import */ var _core_utils_extend__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../core/utils/extend */ "./node_modules/devextreme/esm/core/utils/extend.js");
-/* harmony import */ var _core_utils_iterator__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../core/utils/iterator */ "./node_modules/devextreme/esm/core/utils/iterator.js");
-/* harmony import */ var _core_utils_type__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../core/utils/type */ "./node_modules/devextreme/esm/core/utils/type.js");
-/* harmony import */ var _m_errors__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../m_errors */ "./node_modules/devextreme/esm/__internal/data/m_errors.js");
-/* harmony import */ var _m_utils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../m_utils */ "./node_modules/devextreme/esm/__internal/data/m_utils.js");
-/* harmony import */ var _m_utils__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./m_utils */ "./node_modules/devextreme/esm/__internal/data/odata/m_utils.js");
-/**
- * DevExtreme (esm/__internal/data/odata/m_query_adapter.js)
- * Version: 24.2.7
- * Build date: Mon Apr 28 2025
- *
- * Copyright (c) 2012 - 2025 Developer Express Inc. ALL RIGHTS RESERVED
- * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
- */
-
-
-
-
-
-
-
-
-const DEFAULT_PROTOCOL_VERSION = 4;
-const STRING_FUNCTIONS = ["contains", "notcontains", "startswith", "endswith"];
-const compileCriteria = (() => {
-    let protocolVersion;
-    let forceLowerCase;
-    let fieldTypes;
-    const createBinaryOperationFormatter = op => (prop, val) => `${prop} ${op} ${val}`;
-    const createStringFuncFormatter = (op, reverse) => (prop, val) => {
-        const bag = [op, "("];
-        if (forceLowerCase) {
-            prop = -1 === prop.indexOf("tolower(") ? `tolower(${prop})` : prop;
-            val = val.toLowerCase()
-        }
-        if (reverse) {
-            bag.push(val, ",", prop)
-        } else {
-            bag.push(prop, ",", val)
-        }
-        bag.push(")");
-        return bag.join("")
-    };
-    const formatters = {
-        "=": createBinaryOperationFormatter("eq"),
-        "<>": createBinaryOperationFormatter("ne"),
-        ">": createBinaryOperationFormatter("gt"),
-        ">=": createBinaryOperationFormatter("ge"),
-        "<": createBinaryOperationFormatter("lt"),
-        "<=": createBinaryOperationFormatter("le"),
-        startswith: createStringFuncFormatter("startswith"),
-        endswith: createStringFuncFormatter("endswith")
-    };
-    const formattersV2 = (0,_core_utils_extend__WEBPACK_IMPORTED_MODULE_2__.extend)({}, formatters, {
-        contains: createStringFuncFormatter("substringof", true),
-        notcontains: createStringFuncFormatter("not substringof", true)
-    });
-    const formattersV4 = (0,_core_utils_extend__WEBPACK_IMPORTED_MODULE_2__.extend)({}, formatters, {
-        contains: createStringFuncFormatter("contains"),
-        notcontains: createStringFuncFormatter("not contains")
-    });
-    const compileBinary = criteria => {
-        var _fieldTypes;
-        criteria = (0,_m_utils__WEBPACK_IMPORTED_MODULE_6__.normalizeBinaryCriterion)(criteria);
-        const op = criteria[1];
-        const fieldName = criteria[0];
-        const fieldType = fieldTypes && fieldTypes[fieldName];
-        if (fieldType && (name = op, STRING_FUNCTIONS.some((funcName => funcName === name))) && "String" !== fieldType) {
-            throw new _m_errors__WEBPACK_IMPORTED_MODULE_5__.errors.Error("E4024", op, fieldName, fieldType)
-        }
-        var name;
-        const formatters = 4 === protocolVersion ? formattersV4 : formattersV2;
-        const formatter = formatters[op.toLowerCase()];
-        if (!formatter) {
-            throw _m_errors__WEBPACK_IMPORTED_MODULE_5__.errors.Error("E4003", op)
-        }
-        let value = criteria[2];
-        if (null !== (_fieldTypes = fieldTypes) && void 0 !== _fieldTypes && _fieldTypes[fieldName]) {
-            value = (0,_m_utils__WEBPACK_IMPORTED_MODULE_7__.convertPrimitiveValue)(fieldTypes[fieldName], value)
-        }
-        return formatter((0,_m_utils__WEBPACK_IMPORTED_MODULE_7__.serializePropName)(fieldName), (0,_m_utils__WEBPACK_IMPORTED_MODULE_7__.serializeValue)(value, protocolVersion))
-    };
-    const compileGroup = criteria => {
-        const bag = [];
-        let groupOperator;
-        let nextGroupOperator;
-        (0,_core_utils_iterator__WEBPACK_IMPORTED_MODULE_3__.each)(criteria, (function(index, criterion) {
-            if (Array.isArray(criterion)) {
-                if (bag.length > 1 && groupOperator !== nextGroupOperator) {
-                    throw new _m_errors__WEBPACK_IMPORTED_MODULE_5__.errors.Error("E4019")
-                }
-                bag.push(`(${compileCore(criterion)})`);
-                groupOperator = nextGroupOperator;
-                nextGroupOperator = "and"
-            } else {
-                nextGroupOperator = (0,_m_utils__WEBPACK_IMPORTED_MODULE_6__.isConjunctiveOperator)(this) ? "and" : "or"
-            }
-        }));
-        return bag.join(` ${groupOperator} `)
-    };
-    const compileCore = criteria => {
-        if (Array.isArray(criteria[0])) {
-            return compileGroup(criteria)
-        }
-        if ((0,_m_utils__WEBPACK_IMPORTED_MODULE_6__.isUnaryOperation)(criteria)) {
-            return (criteria => {
-                const op = criteria[0];
-                const crit = compileCore(criteria[1]);
-                if ("!" === op) {
-                    return `not (${crit})`
-                }
-                throw _m_errors__WEBPACK_IMPORTED_MODULE_5__.errors.Error("E4003", op)
-            })(criteria)
-        }
-        return compileBinary(criteria)
-    };
-    return (criteria, version, types, filterToLower) => {
-        fieldTypes = types;
-        forceLowerCase = filterToLower ?? (0,_core_config__WEBPACK_IMPORTED_MODULE_1__["default"])().oDataFilterToLower;
-        protocolVersion = version;
-        return compileCore(criteria)
-    }
-})();
-const createODataQueryAdapter = queryOptions => {
-    let _sorting = [];
-    const _criteria = [];
-    const _expand = queryOptions.expand;
-    let _select;
-    let _skip;
-    let _take;
-    let _countQuery;
-    const _oDataVersion = queryOptions.version || 4;
-    const hasSlice = () => _skip || void 0 !== _take;
-    const hasFunction = criterion => {
-        for (let i = 0; i < criterion.length; i++) {
-            if ((0,_core_utils_type__WEBPACK_IMPORTED_MODULE_4__.isFunction)(criterion[i])) {
-                return true
-            }
-            if (Array.isArray(criterion[i]) && hasFunction(criterion[i])) {
-                return true
-            }
-        }
-        return false
-    };
-    const requestData = () => {
-        const result = {};
-        if (!_countQuery) {
-            if (_sorting.length) {
-                result.$orderby = _sorting.join(",")
-            }
-            if (_skip) {
-                result.$skip = _skip
-            }
-            if (void 0 !== _take) {
-                result.$top = _take
-            }
-            result.$select = (0,_m_utils__WEBPACK_IMPORTED_MODULE_7__.generateSelect)(_oDataVersion, _select) || void 0;
-            result.$expand = (0,_m_utils__WEBPACK_IMPORTED_MODULE_7__.generateExpand)(_oDataVersion, _expand, _select) || void 0
-        }
-        if (_criteria.length) {
-            const criteria = _criteria.length < 2 ? _criteria[0] : _criteria;
-            const fieldTypes = null === queryOptions || void 0 === queryOptions ? void 0 : queryOptions.fieldTypes;
-            const filterToLower = null === queryOptions || void 0 === queryOptions ? void 0 : queryOptions.filterToLower;
-            result.$filter = compileCriteria(criteria, _oDataVersion, fieldTypes, filterToLower)
-        }
-        if (_countQuery) {
-            result.$top = 0
-        }
-        if (queryOptions.requireTotalCount || _countQuery) {
-            if (4 !== _oDataVersion) {
-                result.$inlinecount = "allpages"
-            } else {
-                result.$count = "true"
-            }
-        }
-        return result
-    };
-    return {
-        optimize: tasks => {
-            let selectIndex = -1;
-            for (let i = 0; i < tasks.length; i++) {
-                if ("select" === tasks[i].name) {
-                    selectIndex = i;
-                    break
-                }
-            }
-            if (selectIndex < 0 || !(0,_core_utils_type__WEBPACK_IMPORTED_MODULE_4__.isFunction)(tasks[selectIndex].args[0])) {
-                return
-            }
-            const nextTask = tasks[1 + selectIndex];
-            if (!nextTask || "slice" !== nextTask.name) {
-                return
-            }
-            tasks[1 + selectIndex] = tasks[selectIndex];
-            tasks[selectIndex] = nextTask
-        },
-        exec: url => (0,_m_utils__WEBPACK_IMPORTED_MODULE_7__.sendRequest)(_oDataVersion, {
-            url: url,
-            params: (0,_core_utils_extend__WEBPACK_IMPORTED_MODULE_2__.extend)(requestData(), null === queryOptions || void 0 === queryOptions ? void 0 : queryOptions.params)
-        }, {
-            beforeSend: queryOptions.beforeSend,
-            jsonp: queryOptions.jsonp,
-            withCredentials: queryOptions.withCredentials,
-            countOnly: _countQuery,
-            deserializeDates: queryOptions.deserializeDates,
-            fieldTypes: queryOptions.fieldTypes,
-            isPaged: isFinite(_take)
-        }),
-        multiSort(args) {
-            let rules;
-            if (hasSlice()) {
-                return false
-            }
-            for (let i = 0; i < args.length; i++) {
-                const getter = args[i][0];
-                const desc = !!args[i][1];
-                let rule;
-                if ("string" !== typeof getter) {
-                    return false
-                }
-                rule = (0,_m_utils__WEBPACK_IMPORTED_MODULE_7__.serializePropName)(getter);
-                if (desc) {
-                    rule += " desc"
-                }
-                rules = rules || [];
-                rules.push(rule)
-            }
-            _sorting = rules
-        },
-        slice(skipCount, takeCount) {
-            if (hasSlice()) {
-                return false
-            }
-            _skip = skipCount;
-            _take = takeCount
-        },
-        filter(criterion) {
-            if (hasSlice()) {
-                return false
-            }
-            if (!Array.isArray(criterion)) {
-                criterion = [].slice.call(arguments)
-            }
-            if (hasFunction(criterion)) {
-                return false
-            }
-            if (_criteria.length) {
-                _criteria.push("and")
-            }
-            _criteria.push(criterion)
-        },
-        select(expr) {
-            if (_select || (0,_core_utils_type__WEBPACK_IMPORTED_MODULE_4__.isFunction)(expr)) {
-                return false
-            }
-            if (!Array.isArray(expr)) {
-                expr = [].slice.call(arguments)
-            }
-            _select = expr
-        },
-        count: () => _countQuery = true
-    }
-};
-_common_data_query_adapters__WEBPACK_IMPORTED_MODULE_0__["default"].odata = createODataQueryAdapter;
-const odata = createODataQueryAdapter;
-
-
-/***/ }),
-
-/***/ "./node_modules/devextreme/esm/__internal/data/odata/m_request_dispatcher.js":
-/*!***********************************************************************************!*\
-  !*** ./node_modules/devextreme/esm/__internal/data/odata/m_request_dispatcher.js ***!
-  \***********************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ RequestDispatcher)
-/* harmony export */ });
-/* harmony import */ var _common_data_odata_query_adapter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../common/data/odata/query_adapter */ "./node_modules/devextreme/esm/common/data/odata/query_adapter.js");
-/* harmony import */ var _common_data_odata_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../common/data/odata/utils */ "./node_modules/devextreme/esm/common/data/odata/utils.js");
-/**
- * DevExtreme (esm/__internal/data/odata/m_request_dispatcher.js)
- * Version: 24.2.7
- * Build date: Mon Apr 28 2025
- *
- * Copyright (c) 2012 - 2025 Developer Express Inc. ALL RIGHTS RESERVED
- * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
- */
-
-
-const DEFAULT_PROTOCOL_VERSION = 4;
-class RequestDispatcher {
-    constructor(options) {
-        options = options || {};
-        this._url = String(options.url).replace(/\/+$/, "");
-        this._beforeSend = options.beforeSend;
-        this._jsonp = options.jsonp;
-        this._version = options.version || 4;
-        this._withCredentials = options.withCredentials;
-        this._deserializeDates = options.deserializeDates;
-        this._filterToLower = options.filterToLower
-    }
-    sendRequest(url, method, params, payload) {
-        return (0,_common_data_odata_utils__WEBPACK_IMPORTED_MODULE_1__.sendRequest)(this.version, {
-            url: url,
-            method: method,
-            params: params || {},
-            payload: payload
-        }, {
-            beforeSend: this._beforeSend,
-            jsonp: this._jsonp,
-            withCredentials: this._withCredentials,
-            deserializeDates: this._deserializeDates
-        })
-    }
-    get version() {
-        return this._version
-    }
-    get beforeSend() {
-        return this._beforeSend
-    }
-    get url() {
-        return this._url
-    }
-    get jsonp() {
-        return this._jsonp
-    }
-    get filterToLower() {
-        return this._filterToLower
-    }
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/devextreme/esm/__internal/data/odata/m_store.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/devextreme/esm/__internal/data/odata/m_store.js ***!
-  \**********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _common_data_odata_query_adapter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../common/data/odata/query_adapter */ "./node_modules/devextreme/esm/common/data/odata/query_adapter.js");
-/* harmony import */ var _common_data_errors__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../common/data/errors */ "./node_modules/devextreme/esm/common/data/errors.js");
-/* harmony import */ var _common_data_odata_request_dispatcher__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../common/data/odata/request_dispatcher */ "./node_modules/devextreme/esm/common/data/odata/request_dispatcher.js");
-/* harmony import */ var _common_data_query__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../common/data/query */ "./node_modules/devextreme/esm/common/data/query.js");
-/* harmony import */ var _core_config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../core/config */ "./node_modules/devextreme/esm/core/config.js");
-/* harmony import */ var _core_utils_deferred__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../core/utils/deferred */ "./node_modules/devextreme/esm/core/utils/deferred.js");
-/* harmony import */ var _core_utils_type__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../core/utils/type */ "./node_modules/devextreme/esm/core/utils/type.js");
-/* harmony import */ var _data_abstract_store__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../data/abstract_store */ "./node_modules/devextreme/esm/data/abstract_store.js");
-/* harmony import */ var _m_utils__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./m_utils */ "./node_modules/devextreme/esm/__internal/data/odata/m_utils.js");
-/**
- * DevExtreme (esm/__internal/data/odata/m_store.js)
- * Version: 24.2.7
- * Build date: Mon Apr 28 2025
- *
- * Copyright (c) 2012 - 2025 Developer Express Inc. ALL RIGHTS RESERVED
- * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
- */
-
-
-
-
-
-
-
-
-
-const ANONYMOUS_KEY_NAME = "5d46402c-7899-4ea9-bd81-8b73c47c7683";
-const expandKeyType = (key, keyType) => ({
-    [key]: keyType
-});
-const mergeFieldTypesWithKeyType = (fieldTypes, keyType) => {
-    const result = {};
-    for (const field in fieldTypes) {
-        result[field] = fieldTypes[field]
-    }
-    for (const keyName in keyType) {
-        if (keyName in result) {
-            if (result[keyName] !== keyType[keyName]) {
-                _common_data_errors__WEBPACK_IMPORTED_MODULE_1__.errors.log("W4001", keyName)
-            }
-        } else {
-            result[keyName] = keyType[keyName]
-        }
-    }
-    return result
-};
-const ODataStore = _data_abstract_store__WEBPACK_IMPORTED_MODULE_7__["default"].inherit({
-    ctor(options) {
-        this.callBase(options);
-        this._requestDispatcher = new _common_data_odata_request_dispatcher__WEBPACK_IMPORTED_MODULE_2__["default"](options);
-        let key = this.key();
-        let {
-            fieldTypes: fieldTypes
-        } = options;
-        let {
-            keyType: keyType
-        } = options;
-        if (keyType) {
-            const keyTypeIsString = "string" === typeof keyType;
-            if (!key) {
-                key = keyTypeIsString ? ANONYMOUS_KEY_NAME : Object.keys(keyType);
-                this._legacyAnonymousKey = key
-            }
-            if (keyTypeIsString) {
-                keyType = expandKeyType(key, keyType)
-            }
-            fieldTypes = mergeFieldTypesWithKeyType(fieldTypes, keyType)
-        }
-        this._fieldTypes = fieldTypes || {};
-        if (2 === this.version()) {
-            this._updateMethod = "MERGE"
-        } else {
-            this._updateMethod = "PATCH"
-        }
-    },
-    _customLoadOptions: () => ["expand", "customQueryParams"],
-    _byKeyImpl(key, extraOptions) {
-        const params = {};
-        if (extraOptions) {
-            params.$expand = (0,_m_utils__WEBPACK_IMPORTED_MODULE_8__.generateExpand)(this.version(), extraOptions.expand, extraOptions.select) || void 0;
-            params.$select = (0,_m_utils__WEBPACK_IMPORTED_MODULE_8__.generateSelect)(this.version(), extraOptions.select) || void 0
-        }
-        return this._requestDispatcher.sendRequest(this._byKeyUrl(key), "GET", params)
-    },
-    createQuery(loadOptions) {
-        let url;
-        const queryOptions = {
-            adapter: "odata",
-            beforeSend: this._requestDispatcher.beforeSend,
-            errorHandler: this._errorHandler,
-            jsonp: this._requestDispatcher.jsonp,
-            version: this._requestDispatcher.version,
-            withCredentials: this._requestDispatcher._withCredentials,
-            expand: null === loadOptions || void 0 === loadOptions ? void 0 : loadOptions.expand,
-            requireTotalCount: null === loadOptions || void 0 === loadOptions ? void 0 : loadOptions.requireTotalCount,
-            deserializeDates: this._requestDispatcher._deserializeDates,
-            fieldTypes: this._fieldTypes
-        };
-        url = (null === loadOptions || void 0 === loadOptions ? void 0 : loadOptions.urlOverride) ?? this._requestDispatcher.url;
-        if ((0,_core_utils_type__WEBPACK_IMPORTED_MODULE_6__.isDefined)(this._requestDispatcher.filterToLower)) {
-            queryOptions.filterToLower = this._requestDispatcher.filterToLower
-        }
-        if (null !== loadOptions && void 0 !== loadOptions && loadOptions.customQueryParams) {
-            const params = (0,_m_utils__WEBPACK_IMPORTED_MODULE_8__.escapeServiceOperationParams)(null === loadOptions || void 0 === loadOptions ? void 0 : loadOptions.customQueryParams, this.version());
-            if (4 === this.version()) {
-                url = (0,_m_utils__WEBPACK_IMPORTED_MODULE_8__.formatFunctionInvocationUrl)(url, params)
-            } else {
-                queryOptions.params = params
-            }
-        }
-        return (0,_common_data_query__WEBPACK_IMPORTED_MODULE_3__["default"])(url, queryOptions)
-    },
-    _insertImpl(values) {
-        this._requireKey();
-        const d = new _core_utils_deferred__WEBPACK_IMPORTED_MODULE_5__.Deferred;
-        (0,_core_utils_deferred__WEBPACK_IMPORTED_MODULE_5__.when)(this._requestDispatcher.sendRequest(this._requestDispatcher.url, "POST", null, values)).done((serverResponse => d.resolve(serverResponse && !(0,_core_config__WEBPACK_IMPORTED_MODULE_4__["default"])().useLegacyStoreResult ? serverResponse : values, this.keyOf(serverResponse)))).fail(d.reject);
-        return d.promise()
-    },
-    _updateImpl(key, values) {
-        const d = new _core_utils_deferred__WEBPACK_IMPORTED_MODULE_5__.Deferred;
-        (0,_core_utils_deferred__WEBPACK_IMPORTED_MODULE_5__.when)(this._requestDispatcher.sendRequest(this._byKeyUrl(key), this._updateMethod, null, values)).done((serverResponse => (0,_core_config__WEBPACK_IMPORTED_MODULE_4__["default"])().useLegacyStoreResult ? d.resolve(key, values) : d.resolve(serverResponse || values, key))).fail(d.reject);
-        return d.promise()
-    },
-    _removeImpl(key) {
-        const d = new _core_utils_deferred__WEBPACK_IMPORTED_MODULE_5__.Deferred;
-        (0,_core_utils_deferred__WEBPACK_IMPORTED_MODULE_5__.when)(this._requestDispatcher.sendRequest(this._byKeyUrl(key), "DELETE")).done((() => d.resolve(key))).fail(d.reject);
-        return d.promise()
-    },
-    _convertKey(value) {
-        let result = value;
-        const fieldTypes = this._fieldTypes;
-        const key = this.key() || this._legacyAnonymousKey;
-        if (Array.isArray(key)) {
-            result = {};
-            for (let i = 0; i < key.length; i++) {
-                const keyName = key[i];
-                result[keyName] = (0,_m_utils__WEBPACK_IMPORTED_MODULE_8__.convertPrimitiveValue)(fieldTypes[keyName], value[keyName])
-            }
-        } else if (fieldTypes[key]) {
-            result = (0,_m_utils__WEBPACK_IMPORTED_MODULE_8__.convertPrimitiveValue)(fieldTypes[key], value)
-        }
-        return result
-    },
-    _byKeyUrl(value) {
-        const baseUrl = this._requestDispatcher.url;
-        const convertedKey = this._convertKey(value);
-        return `${baseUrl}(${encodeURIComponent((0,_m_utils__WEBPACK_IMPORTED_MODULE_8__.serializeKey)(convertedKey,this.version()))})`
-    },
-    version() {
-        return this._requestDispatcher.version
-    }
-}, "odata");
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ODataStore);
-
-
-/***/ }),
-
-/***/ "./node_modules/devextreme/esm/__internal/data/odata/m_utils.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/devextreme/esm/__internal/data/odata/m_utils.js ***!
-  \**********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   EdmLiteral: () => (/* binding */ EdmLiteral),
-/* harmony export */   convertPrimitiveValue: () => (/* binding */ convertPrimitiveValue),
-/* harmony export */   escapeServiceOperationParams: () => (/* binding */ escapeServiceOperationParams),
-/* harmony export */   formatFunctionInvocationUrl: () => (/* binding */ formatFunctionInvocationUrl),
-/* harmony export */   generateExpand: () => (/* binding */ generateExpand),
-/* harmony export */   generateSelect: () => (/* binding */ generateSelect),
-/* harmony export */   keyConverters: () => (/* binding */ keyConverters),
-/* harmony export */   sendRequest: () => (/* binding */ sendRequest),
-/* harmony export */   serializeKey: () => (/* binding */ serializeKey),
-/* harmony export */   serializePropName: () => (/* binding */ serializePropName),
-/* harmony export */   serializeValue: () => (/* binding */ serializeValue)
-/* harmony export */ });
-/* harmony import */ var _common_data_errors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../common/data/errors */ "./node_modules/devextreme/esm/common/data/errors.js");
-/* harmony import */ var _common_data_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../common/data/utils */ "./node_modules/devextreme/esm/common/data/utils.js");
-/* harmony import */ var _core_class__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../core/class */ "./node_modules/devextreme/esm/core/class.js");
-/* harmony import */ var _core_guid__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../core/guid */ "./node_modules/devextreme/esm/core/guid.js");
-/* harmony import */ var _core_utils_ajax__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../core/utils/ajax */ "./node_modules/devextreme/esm/core/utils/ajax.js");
-/* harmony import */ var _core_utils_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../core/utils/common */ "./node_modules/devextreme/esm/core/utils/common.js");
-/* harmony import */ var _core_utils_deferred__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../core/utils/deferred */ "./node_modules/devextreme/esm/core/utils/deferred.js");
-/* harmony import */ var _core_utils_extend__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../core/utils/extend */ "./node_modules/devextreme/esm/core/utils/extend.js");
-/* harmony import */ var _core_utils_iterator__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../core/utils/iterator */ "./node_modules/devextreme/esm/core/utils/iterator.js");
-/* harmony import */ var _core_utils_string__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../core/utils/string */ "./node_modules/devextreme/esm/core/utils/string.js");
-/* harmony import */ var _core_utils_type__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../core/utils/type */ "./node_modules/devextreme/esm/core/utils/type.js");
-/**
- * DevExtreme (esm/__internal/data/odata/m_utils.js)
- * Version: 24.2.7
- * Build date: Mon Apr 28 2025
- *
- * Copyright (c) 2012 - 2025 Developer Express Inc. ALL RIGHTS RESERVED
- * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
- */
-
-
-
-
-
-
-
-
-
-
-
-const GUID_REGEX = /^(\{{0,1}([0-9a-fA-F]){8}-([0-9a-fA-F]){4}-([0-9a-fA-F]){4}-([0-9a-fA-F]){4}-([0-9a-fA-F]){12}\}{0,1})$/;
-const VERBOSE_DATE_REGEX = /^\/Date\((-?\d+)((\+|-)?(\d+)?)\)\/$/;
-const ISO8601_DATE_REGEX = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[-+]{1}\d{2}(:?)(\d{2})?)?$/;
-const JSON_VERBOSE_MIME_TYPE = "application/json;odata=verbose";
-const makeArray = value => "string" === (0,_core_utils_type__WEBPACK_IMPORTED_MODULE_10__.type)(value) ? value.split() : value;
-const hasDot = x => /\./.test(x);
-const pad = (text, length, right) => {
-    text = String(text);
-    while (text.length < length) {
-        text = right ? `${text}0` : `0${text}`
-    }
-    return text
-};
-const formatISO8601 = (date, skipZeroTime, skipTimezone) => {
-    const bag = [];
-    const padLeft2 = text => pad(text, 2);
-    bag.push(date.getFullYear());
-    bag.push("-");
-    bag.push(padLeft2(date.getMonth() + 1));
-    bag.push("-");
-    bag.push(padLeft2(date.getDate()));
-    if (!(skipZeroTime && date.getHours() + date.getMinutes() + date.getSeconds() + date.getMilliseconds() < 1)) {
-        bag.push("T");
-        bag.push(padLeft2(date.getHours()));
-        bag.push(":");
-        bag.push(padLeft2(date.getMinutes()));
-        bag.push(":");
-        bag.push(padLeft2(date.getSeconds()));
-        if (date.getMilliseconds()) {
-            bag.push(".");
-            bag.push(pad(date.getMilliseconds(), 3))
-        }
-        if (!skipTimezone) {
-            bag.push("Z")
-        }
-    }
-    return bag.join("")
-};
-const parseISO8601 = isoString => {
-    const result = new Date(60 * new Date(0).getTimezoneOffset() * 1e3);
-    const chunks = isoString.replace("Z", "").split("T");
-    const date = /(\d{4})-(\d{2})-(\d{2})/.exec(chunks[0]);
-    const time = /(\d{2}):(\d{2}):(\d{2})\.?(\d{0,7})?/.exec(chunks[1]);
-    result.setFullYear(Number(date[1]));
-    result.setMonth(Number(date[2]) - 1);
-    result.setDate(Number(date[3]));
-    if (Array.isArray(time) && time.length) {
-        result.setHours(Number(time[1]));
-        result.setMinutes(Number(time[2]));
-        result.setSeconds(Number(time[3]));
-        let fractional = (time[4] || "").slice(0, 3);
-        fractional = pad(fractional, 3, true);
-        result.setMilliseconds(Number(fractional))
-    }
-    return result
-};
-const isAbsoluteUrl = url => /^(?:[a-z]+:)?\/{2,2}/i.test(url);
-const stripParams = url => {
-    const index = url.indexOf("?");
-    if (index > -1) {
-        return url.substr(0, index)
-    }
-    return url
-};
-const toAbsoluteUrl = (basePath, relativePath) => {
-    let part;
-    const baseParts = stripParams(basePath).split("/");
-    const relativeParts = relativePath.split("/");
-    baseParts.pop();
-    while (relativeParts.length) {
-        part = relativeParts.shift();
-        if (".." === part) {
-            baseParts.pop()
-        } else {
-            baseParts.push(part)
-        }
-    }
-    return baseParts.join("/")
-};
-const param = params => {
-    const result = [];
-    for (const name in params) {
-        result.push(`${name}=${params[name]}`)
-    }
-    return result.join("&")
-};
-const ajaxOptionsForRequest = function(protocolVersion, request) {
-    var _options$beforeSend;
-    let options = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
-    request = (0,_core_utils_extend__WEBPACK_IMPORTED_MODULE_7__.extend)({
-        async: true,
-        method: "get",
-        url: "",
-        params: {},
-        payload: null,
-        headers: {},
-        timeout: 3e4
-    }, request);
-    null === (_options$beforeSend = options.beforeSend) || void 0 === _options$beforeSend || _options$beforeSend.call(options, request);
-    const {
-        async: async,
-        timeout: timeout,
-        headers: headers
-    } = request;
-    let {
-        url: url,
-        method: method
-    } = request;
-    const {
-        jsonp: jsonp,
-        withCredentials: withCredentials
-    } = options;
-    method = (method || "get").toLowerCase();
-    const isGet = "get" === method;
-    const useJsonp = isGet && jsonp;
-    const params = (0,_core_utils_extend__WEBPACK_IMPORTED_MODULE_7__.extend)({}, request.params);
-    const ajaxData = isGet ? params : (payload = request.payload, JSON.stringify(payload, (function(key, value) {
-        if (!(this[key] instanceof Date)) {
-            return value
-        }
-        value = formatISO8601(this[key]);
-        switch (protocolVersion) {
-            case 2:
-                return value.substr(0, value.length - 1);
-            case 3:
-            case 4:
-                return value;
-            default:
-                throw _common_data_errors__WEBPACK_IMPORTED_MODULE_0__.errors.Error("E4002")
-        }
-    })));
-    var payload;
-    const qs = !isGet && param(params);
-    const contentType = !isGet && JSON_VERBOSE_MIME_TYPE;
-    if (qs) {
-        url += (url.indexOf("?") > -1 ? "&" : "?") + qs
-    }
-    if (useJsonp) {
-        ajaxData.$format = "json"
-    }
-    return {
-        url: url,
-        data: ajaxData,
-        dataType: useJsonp ? "jsonp" : "json",
-        jsonp: useJsonp && "$callback",
-        method: method,
-        async: async,
-        timeout: timeout,
-        headers: headers,
-        contentType: contentType,
-        accepts: {
-            json: [JSON_VERBOSE_MIME_TYPE, "text/plain"].join()
-        },
-        xhrFields: {
-            withCredentials: withCredentials
-        }
-    }
-};
-const sendRequest = (protocolVersion, request, options) => {
-    const {
-        deserializeDates: deserializeDates,
-        fieldTypes: fieldTypes,
-        countOnly: countOnly,
-        isPaged: isPaged
-    } = options;
-    const d = new _core_utils_deferred__WEBPACK_IMPORTED_MODULE_6__.Deferred;
-    const ajaxOptions = ajaxOptionsForRequest(protocolVersion, request, options);
-    _core_utils_ajax__WEBPACK_IMPORTED_MODULE_4__["default"].sendRequest(ajaxOptions).always(((obj, textStatus) => {
-        const transformOptions = {
-            deserializeDates: deserializeDates,
-            fieldTypes: fieldTypes
-        };
-        const tuple = interpretJsonFormat(obj, textStatus, transformOptions, ajaxOptions);
-        const {
-            error: error,
-            data: data,
-            count: count
-        } = tuple;
-        let {
-            nextUrl: nextUrl
-        } = tuple;
-        if (error) {
-            if (error.message !== _common_data_utils__WEBPACK_IMPORTED_MODULE_1__.XHR_ERROR_UNLOAD) {
-                d.reject(error)
-            }
-        } else if (countOnly) {
-            if (isFinite(count)) {
-                d.resolve(count)
-            } else {
-                d.reject(_common_data_errors__WEBPACK_IMPORTED_MODULE_0__.errors.Error("E4018"))
-            }
-        } else if (nextUrl && !isPaged) {
-            if (!isAbsoluteUrl(nextUrl)) {
-                nextUrl = toAbsoluteUrl(ajaxOptions.url, nextUrl)
-            }
-            sendRequest(protocolVersion, {
-                url: nextUrl
-            }, options).fail(d.reject).done((nextData => d.resolve(data.concat(nextData))))
-        } else {
-            const extra = isFinite(count) ? {
-                totalCount: count
-            } : void 0;
-            d.resolve(data, extra)
-        }
-    }));
-    return d.promise()
-};
-const formatDotNetError = errorObj => {
-    let message;
-    let currentMessage;
-    let currentError = errorObj;
-    if ("message" in errorObj) {
-        var _errorObj$message;
-        message = (null === (_errorObj$message = errorObj.message) || void 0 === _errorObj$message ? void 0 : _errorObj$message.value) || errorObj.message
-    }
-    while (currentError = currentError.innererror || currentError.internalexception) {
-        currentMessage = currentError.message;
-        message = currentMessage ?? message;
-        if (currentError.internalexception && -1 === message.indexOf("inner exception")) {
-            break
-        }
-    }
-    return message
-};
-const errorFromResponse = (obj, textStatus, ajaxOptions) => {
-    var _response, _response2, _response3, _response4;
-    if ("nocontent" === textStatus) {
-        return null
-    }
-    let message = "Unknown error";
-    let response = obj;
-    let httpStatus = 200;
-    const errorData = {
-        requestOptions: ajaxOptions
-    };
-    if ("success" !== textStatus) {
-        const {
-            status: status,
-            responseText: responseText
-        } = obj;
-        httpStatus = status;
-        message = (0,_common_data_utils__WEBPACK_IMPORTED_MODULE_1__.errorMessageFromXhr)(obj, textStatus);
-        try {
-            response = JSON.parse(responseText)
-        } catch (x) {}
-    }
-    const errorObj = (null === (_response = response) || void 0 === _response ? void 0 : _response.then) || (null === (_response2 = response) || void 0 === _response2 ? void 0 : _response2.error) || (null === (_response3 = response) || void 0 === _response3 ? void 0 : _response3["odata.error"]) || (null === (_response4 = response) || void 0 === _response4 ? void 0 : _response4["@odata.error"]);
-    if (errorObj) {
-        message = formatDotNetError(errorObj) || message;
-        errorData.errorDetails = errorObj;
-        if (200 === httpStatus) {
-            httpStatus = 500
-        }
-        const customCode = Number(errorObj.code);
-        if (isFinite(customCode) && customCode >= 400) {
-            httpStatus = customCode
-        }
-    }
-    if (httpStatus >= 400 || 0 === httpStatus) {
-        errorData.httpStatus = httpStatus;
-        return (0,_core_utils_extend__WEBPACK_IMPORTED_MODULE_7__.extend)(Error(message), errorData)
-    }
-    return null
-};
-const interpretJsonFormat = (obj, textStatus, transformOptions, ajaxOptions) => {
-    const error = errorFromResponse(obj, textStatus, ajaxOptions);
-    if (error) {
-        return {
-            error: error
-        }
-    }
-    if (!(0,_core_utils_type__WEBPACK_IMPORTED_MODULE_10__.isPlainObject)(obj)) {
-        return {
-            data: obj
-        }
-    }
-    const value = "d" in obj && (Array.isArray(obj.d) || (0,_core_utils_type__WEBPACK_IMPORTED_MODULE_10__.isObject)(obj.d)) ? interpretVerboseJsonFormat(obj) : interpretLightJsonFormat(obj);
-    transformTypes(value, transformOptions);
-    return value
-};
-const interpretVerboseJsonFormat = _ref => {
-    let {
-        d: data
-    } = _ref;
-    if (!(0,_core_utils_type__WEBPACK_IMPORTED_MODULE_10__.isDefined)(data)) {
-        return {
-            error: Error("Malformed or unsupported JSON response received")
-        }
-    }
-    return {
-        data: data.results ?? data,
-        nextUrl: data.__next,
-        count: parseInt(data.__count, 10)
-    }
-};
-const interpretLightJsonFormat = obj => ({
-    data: obj.value ?? obj,
-    nextUrl: obj["@odata.nextLink"],
-    count: parseInt(obj["@odata.count"], 10)
-});
-const EdmLiteral = _core_class__WEBPACK_IMPORTED_MODULE_2__["default"].inherit({
-    ctor(value) {
-        this._value = value
-    },
-    valueOf() {
-        return this._value
-    }
-});
-const transformTypes = function(obj) {
-    let options = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-    (0,_core_utils_iterator__WEBPACK_IMPORTED_MODULE_8__.each)(obj, ((key, value) => {
-        if (null !== value && "object" === typeof value) {
-            if ("results" in value) {
-                obj[key] = value.results
-            }
-            transformTypes(obj[key], options)
-        } else if ("string" === typeof value) {
-            const {
-                fieldTypes: fieldTypes,
-                deserializeDates: deserializeDates
-            } = options;
-            const canBeGuid = !fieldTypes || "String" !== fieldTypes[key];
-            if (canBeGuid && GUID_REGEX.test(value)) {
-                obj[key] = new _core_guid__WEBPACK_IMPORTED_MODULE_3__["default"](value)
-            }
-            if (false !== deserializeDates) {
-                if (VERBOSE_DATE_REGEX.exec(value)) {
-                    const date = new Date(Number(RegExp.$1) + 60 * RegExp.$2 * 1e3);
-                    obj[key] = new Date(date.valueOf() + 60 * date.getTimezoneOffset() * 1e3)
-                } else if (ISO8601_DATE_REGEX.test(value)) {
-                    obj[key] = new Date(parseISO8601(obj[key]).valueOf())
-                }
-            }
-        }
-    }))
-};
-const serializeDate = date => `datetime'${formatISO8601(date,true,true)}'`;
-const serializeString = value => `'${value.replace(/'/g,"''")}'`;
-const serializePropName = propName => propName instanceof EdmLiteral ? propName.valueOf() : propName.replace(/\./g, "/");
-const serializeValueV4 = value => {
-    if (value instanceof Date) {
-        return formatISO8601(value, false, false)
-    }
-    if (value instanceof _core_guid__WEBPACK_IMPORTED_MODULE_3__["default"]) {
-        return value.valueOf()
-    }
-    if (Array.isArray(value)) {
-        return `[${value.map((item=>serializeValueV4(item))).join(",")}]`
-    }
-    return serializeValueV2(value)
-};
-const serializeValueV2 = value => {
-    if (value instanceof Date) {
-        return serializeDate(value)
-    }
-    if (value instanceof _core_guid__WEBPACK_IMPORTED_MODULE_3__["default"]) {
-        return `guid'${value}'`
-    }
-    if (value instanceof EdmLiteral) {
-        return value.valueOf()
-    }
-    if ("string" === typeof value) {
-        return serializeString(value)
-    }
-    return String(value)
-};
-const serializeValue = (value, protocolVersion) => {
-    switch (protocolVersion) {
-        case 2:
-        case 3:
-            return serializeValueV2(value);
-        case 4:
-            return serializeValueV4(value);
-        default:
-            throw _common_data_errors__WEBPACK_IMPORTED_MODULE_0__.errors.Error("E4002")
-    }
-};
-const serializeKey = (key, protocolVersion) => {
-    if ((0,_core_utils_type__WEBPACK_IMPORTED_MODULE_10__.isPlainObject)(key)) {
-        const parts = [];
-        (0,_core_utils_iterator__WEBPACK_IMPORTED_MODULE_8__.each)(key, ((k, v) => parts.push(`${serializePropName(k)}=${serializeValue(v,protocolVersion)}`)));
-        return parts.join()
-    }
-    return serializeValue(key, protocolVersion)
-};
-const keyConverters = {
-    String: value => `${value}`,
-    Int32: value => Math.floor(value),
-    Int64: value => value instanceof EdmLiteral ? value : new EdmLiteral(`${value}L`),
-    Guid: value => value instanceof _core_guid__WEBPACK_IMPORTED_MODULE_3__["default"] ? value : new _core_guid__WEBPACK_IMPORTED_MODULE_3__["default"](value),
-    Boolean: value => !!value,
-    Single: value => value instanceof EdmLiteral ? value : new EdmLiteral(`${value}f`),
-    Decimal: value => value instanceof EdmLiteral ? value : new EdmLiteral(`${value}m`)
-};
-const convertPrimitiveValue = (type, value) => {
-    if (null === value) {
-        return null
-    }
-    const converter = keyConverters[type];
-    if (!converter) {
-        throw _common_data_errors__WEBPACK_IMPORTED_MODULE_0__.errors.Error("E4014", type)
-    }
-    return converter(value)
-};
-const generateSelect = (oDataVersion, select) => {
-    if (!select) {
-        return
-    }
-    return oDataVersion < 4 ? serializePropName(select.join()) : (0,_core_utils_common__WEBPACK_IMPORTED_MODULE_5__.grep)(select, hasDot, true).join()
-};
-const formatCore = hash => {
-    let result = "";
-    const selectValue = [];
-    const expandValue = [];
-    (0,_core_utils_iterator__WEBPACK_IMPORTED_MODULE_8__.each)(hash, ((key, value) => {
-        if (Array.isArray(value)) {
-            [].push.apply(selectValue, value)
-        }
-        if ((0,_core_utils_type__WEBPACK_IMPORTED_MODULE_10__.isPlainObject)(value)) {
-            expandValue.push(`${key}${formatCore(value)}`)
-        }
-    }));
-    if (selectValue.length || expandValue.length) {
-        result += "(";
-        if (selectValue.length) {
-            result += `$select=${(0,_core_utils_iterator__WEBPACK_IMPORTED_MODULE_8__.map)(selectValue,serializePropName).join()}`
-        }
-        if (expandValue.length) {
-            if (selectValue.length) {
-                result += ";"
-            }
-            result += `$expand=${(0,_core_utils_iterator__WEBPACK_IMPORTED_MODULE_8__.map)(expandValue,serializePropName).join()}`
-        }
-        result += ")"
-    }
-    return result
-};
-const format = hash => {
-    const result = [];
-    (0,_core_utils_iterator__WEBPACK_IMPORTED_MODULE_8__.each)(hash, ((key, value) => result.push(`${key}${formatCore(value)}`)));
-    return result.join()
-};
-const parseCore = (exprParts, root, stepper) => {
-    const result = stepper(root, exprParts.shift(), exprParts);
-    if (false === result) {
-        return
-    }
-    parseCore(exprParts, result, stepper)
-};
-const parseTree = (exprs, root, stepper) => (0,_core_utils_iterator__WEBPACK_IMPORTED_MODULE_8__.each)(exprs, ((_, x) => parseCore(x.split("."), root, stepper)));
-const generatorV2 = (expand, select) => {
-    const hash = {};
-    if (expand) {
-        (0,_core_utils_iterator__WEBPACK_IMPORTED_MODULE_8__.each)(makeArray(expand), (function() {
-            hash[serializePropName(this)] = 1
-        }))
-    }
-    if (select) {
-        (0,_core_utils_iterator__WEBPACK_IMPORTED_MODULE_8__.each)(makeArray(select), (function() {
-            const path = this.split(".");
-            if (path.length < 2) {
-                return
-            }
-            path.pop();
-            hash[serializePropName(path.join("."))] = 1
-        }))
-    }
-    return (0,_core_utils_iterator__WEBPACK_IMPORTED_MODULE_8__.map)(hash, ((_, v) => v)).join()
-};
-const generatorV4 = (expand, select) => {
-    const hash = {};
-    if (expand || select) {
-        if (expand) {
-            parseTree(makeArray(expand), hash, ((node, key, path) => {
-                node[key] = node[key] || {};
-                return !path.length ? false : node[key]
-            }))
-        }
-        if (select) {
-            parseTree((0,_core_utils_common__WEBPACK_IMPORTED_MODULE_5__.grep)(makeArray(select), hasDot), hash, ((node, key, path) => {
-                if (!path.length) {
-                    node[key] = node[key] || [];
-                    node[key].push(key);
-                    return false
-                }
-                return node[key] = node[key] || {}
-            }))
-        }
-        return format(hash)
-    }
-};
-const generateExpand = (oDataVersion, expand, select) => oDataVersion < 4 ? generatorV2(expand, select) : generatorV4(expand, select);
-const formatFunctionInvocationUrl = (baseUrl, args) => (0,_core_utils_string__WEBPACK_IMPORTED_MODULE_9__.format)("{0}({1})", baseUrl, (0,_core_utils_iterator__WEBPACK_IMPORTED_MODULE_8__.map)(args || {}, ((value, key) => (0,_core_utils_string__WEBPACK_IMPORTED_MODULE_9__.format)("{0}={1}", key, value))).join(","));
-const escapeServiceOperationParams = (params, version) => {
-    if (!params) {
-        return params
-    }
-    const result = {};
-    (0,_core_utils_iterator__WEBPACK_IMPORTED_MODULE_8__.each)(params, ((k, v) => {
-        result[k] = serializeValue(v, version)
-    }));
-    return result
-};
 
 
 /***/ }),
@@ -52720,75 +51399,6 @@ function toFixed(value, precision) {
 
 /***/ }),
 
-/***/ "./node_modules/devextreme/esm/common/data.js":
-/*!****************************************************!*\
-  !*** ./node_modules/devextreme/esm/common/data.js ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   ArrayStore: () => (/* reexport safe */ _data_array_store__WEBPACK_IMPORTED_MODULE_1__["default"]),
-/* harmony export */   CustomStore: () => (/* reexport safe */ _data_custom_store__WEBPACK_IMPORTED_MODULE_2__.CustomStore),
-/* harmony export */   DataHelperMixin: () => (/* reexport safe */ _internal_data_m_data_helper__WEBPACK_IMPORTED_MODULE_9__["default"]),
-/* harmony export */   DataSource: () => (/* reexport safe */ _data_data_source__WEBPACK_IMPORTED_MODULE_3__["default"]),
-/* harmony export */   EdmLiteral: () => (/* reexport safe */ _data_odata_utils__WEBPACK_IMPORTED_MODULE_12__.EdmLiteral),
-/* harmony export */   EndpointSelector: () => (/* reexport safe */ _data_endpoint_selector__WEBPACK_IMPORTED_MODULE_4__["default"]),
-/* harmony export */   LocalStore: () => (/* reexport safe */ _data_local_store__WEBPACK_IMPORTED_MODULE_6__["default"]),
-/* harmony export */   ODataContext: () => (/* reexport safe */ _data_odata_context__WEBPACK_IMPORTED_MODULE_10__["default"]),
-/* harmony export */   ODataStore: () => (/* reexport safe */ _data_odata_store__WEBPACK_IMPORTED_MODULE_11__["default"]),
-/* harmony export */   applyChanges: () => (/* reexport safe */ _data_apply_changes__WEBPACK_IMPORTED_MODULE_0__["default"]),
-/* harmony export */   base64_encode: () => (/* reexport safe */ _data_utils__WEBPACK_IMPORTED_MODULE_8__.base64_encode),
-/* harmony export */   compileGetter: () => (/* reexport safe */ _data_utils__WEBPACK_IMPORTED_MODULE_8__.compileGetter),
-/* harmony export */   compileSetter: () => (/* reexport safe */ _data_utils__WEBPACK_IMPORTED_MODULE_8__.compileSetter),
-/* harmony export */   errorHandler: () => (/* reexport safe */ _data_errors__WEBPACK_IMPORTED_MODULE_5__.errorHandler),
-/* harmony export */   isGroupItemsArray: () => (/* reexport safe */ _data_custom_store__WEBPACK_IMPORTED_MODULE_2__.isGroupItemsArray),
-/* harmony export */   isItemsArray: () => (/* reexport safe */ _data_custom_store__WEBPACK_IMPORTED_MODULE_2__.isItemsArray),
-/* harmony export */   isLoadResultObject: () => (/* reexport safe */ _data_custom_store__WEBPACK_IMPORTED_MODULE_2__.isLoadResultObject),
-/* harmony export */   keyConverters: () => (/* reexport safe */ _data_odata_utils__WEBPACK_IMPORTED_MODULE_12__.keyConverters),
-/* harmony export */   query: () => (/* reexport safe */ _data_query__WEBPACK_IMPORTED_MODULE_7__["default"]),
-/* harmony export */   setErrorHandler: () => (/* reexport safe */ _data_errors__WEBPACK_IMPORTED_MODULE_5__.setErrorHandler)
-/* harmony export */ });
-/* harmony import */ var _data_apply_changes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./data/apply_changes */ "./node_modules/devextreme/esm/common/data/apply_changes.js");
-/* harmony import */ var _data_array_store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./data/array_store */ "./node_modules/devextreme/esm/common/data/array_store.js");
-/* harmony import */ var _data_custom_store__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./data/custom_store */ "./node_modules/devextreme/esm/common/data/custom_store.js");
-/* harmony import */ var _data_data_source__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data/data_source */ "./node_modules/devextreme/esm/common/data/data_source.js");
-/* harmony import */ var _data_endpoint_selector__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./data/endpoint_selector */ "./node_modules/devextreme/esm/common/data/endpoint_selector.js");
-/* harmony import */ var _data_errors__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./data/errors */ "./node_modules/devextreme/esm/common/data/errors.js");
-/* harmony import */ var _data_local_store__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./data/local_store */ "./node_modules/devextreme/esm/common/data/local_store.js");
-/* harmony import */ var _data_query__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./data/query */ "./node_modules/devextreme/esm/common/data/query.js");
-/* harmony import */ var _data_utils__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./data/utils */ "./node_modules/devextreme/esm/common/data/utils.js");
-/* harmony import */ var _internal_data_m_data_helper__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../__internal/data/m_data_helper */ "./node_modules/devextreme/esm/__internal/data/m_data_helper.js");
-/* harmony import */ var _data_odata_context__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./data/odata/context */ "./node_modules/devextreme/esm/common/data/odata/context.js");
-/* harmony import */ var _data_odata_store__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./data/odata/store */ "./node_modules/devextreme/esm/common/data/odata/store.js");
-/* harmony import */ var _data_odata_utils__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./data/odata/utils */ "./node_modules/devextreme/esm/common/data/odata/utils.js");
-/**
- * DevExtreme (esm/common/data.js)
- * Version: 24.2.7
- * Build date: Mon Apr 28 2025
- *
- * Copyright (c) 2012 - 2025 Developer Express Inc. ALL RIGHTS RESERVED
- * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/***/ }),
-
 /***/ "./node_modules/devextreme/esm/common/data/abstract_store.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/devextreme/esm/common/data/abstract_store.js ***!
@@ -52810,32 +51420,6 @@ __webpack_require__.r(__webpack_exports__);
  * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
  */
 
-
-
-/***/ }),
-
-/***/ "./node_modules/devextreme/esm/common/data/apply_changes.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/devextreme/esm/common/data/apply_changes.js ***!
-  \******************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _array_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./array_utils */ "./node_modules/devextreme/esm/common/data/array_utils.js");
-/**
- * DevExtreme (esm/common/data/apply_changes.js)
- * Version: 24.2.7
- * Build date: Mon Apr 28 2025
- *
- * Copyright (c) 2012 - 2025 Developer Express Inc. ALL RIGHTS RESERVED
- * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
- */
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_array_utils__WEBPACK_IMPORTED_MODULE_0__.applyChanges);
 
 
 /***/ }),
@@ -53075,31 +51659,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/devextreme/esm/common/data/endpoint_selector.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/devextreme/esm/common/data/endpoint_selector.js ***!
-  \**********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* reexport safe */ _internal_data_m_endpoint_selector__WEBPACK_IMPORTED_MODULE_0__["default"])
-/* harmony export */ });
-/* harmony import */ var _internal_data_m_endpoint_selector__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../__internal/data/m_endpoint_selector */ "./node_modules/devextreme/esm/__internal/data/m_endpoint_selector.js");
-/**
- * DevExtreme (esm/common/data/endpoint_selector.js)
- * Version: 24.2.7
- * Build date: Mon Apr 28 2025
- *
- * Copyright (c) 2012 - 2025 Developer Express Inc. ALL RIGHTS RESERVED
- * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
- */
-
-
-
-/***/ }),
-
 /***/ "./node_modules/devextreme/esm/common/data/errors.js":
 /*!***********************************************************!*\
   !*** ./node_modules/devextreme/esm/common/data/errors.js ***!
@@ -53117,166 +51676,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _internal_data_m_errors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../__internal/data/m_errors */ "./node_modules/devextreme/esm/__internal/data/m_errors.js");
 /**
  * DevExtreme (esm/common/data/errors.js)
- * Version: 24.2.7
- * Build date: Mon Apr 28 2025
- *
- * Copyright (c) 2012 - 2025 Developer Express Inc. ALL RIGHTS RESERVED
- * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
- */
-
-
-
-/***/ }),
-
-/***/ "./node_modules/devextreme/esm/common/data/local_store.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/devextreme/esm/common/data/local_store.js ***!
-  \****************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* reexport safe */ _internal_data_m_local_store__WEBPACK_IMPORTED_MODULE_0__["default"])
-/* harmony export */ });
-/* harmony import */ var _internal_data_m_local_store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../__internal/data/m_local_store */ "./node_modules/devextreme/esm/__internal/data/m_local_store.js");
-/**
- * DevExtreme (esm/common/data/local_store.js)
- * Version: 24.2.7
- * Build date: Mon Apr 28 2025
- *
- * Copyright (c) 2012 - 2025 Developer Express Inc. ALL RIGHTS RESERVED
- * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
- */
-
-
-
-/***/ }),
-
-/***/ "./node_modules/devextreme/esm/common/data/odata/context.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/devextreme/esm/common/data/odata/context.js ***!
-  \******************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* reexport safe */ _internal_data_odata_m_context__WEBPACK_IMPORTED_MODULE_0__["default"])
-/* harmony export */ });
-/* harmony import */ var _internal_data_odata_m_context__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../__internal/data/odata/m_context */ "./node_modules/devextreme/esm/__internal/data/odata/m_context.js");
-/**
- * DevExtreme (esm/common/data/odata/context.js)
- * Version: 24.2.7
- * Build date: Mon Apr 28 2025
- *
- * Copyright (c) 2012 - 2025 Developer Express Inc. ALL RIGHTS RESERVED
- * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
- */
-
-
-
-/***/ }),
-
-/***/ "./node_modules/devextreme/esm/common/data/odata/query_adapter.js":
-/*!************************************************************************!*\
-  !*** ./node_modules/devextreme/esm/common/data/odata/query_adapter.js ***!
-  \************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   odata: () => (/* reexport safe */ _internal_data_odata_m_query_adapter__WEBPACK_IMPORTED_MODULE_0__.odata)
-/* harmony export */ });
-/* harmony import */ var _internal_data_odata_m_query_adapter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../__internal/data/odata/m_query_adapter */ "./node_modules/devextreme/esm/__internal/data/odata/m_query_adapter.js");
-/**
- * DevExtreme (esm/common/data/odata/query_adapter.js)
- * Version: 24.2.7
- * Build date: Mon Apr 28 2025
- *
- * Copyright (c) 2012 - 2025 Developer Express Inc. ALL RIGHTS RESERVED
- * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
- */
-
-
-
-/***/ }),
-
-/***/ "./node_modules/devextreme/esm/common/data/odata/request_dispatcher.js":
-/*!*****************************************************************************!*\
-  !*** ./node_modules/devextreme/esm/common/data/odata/request_dispatcher.js ***!
-  \*****************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* reexport safe */ _internal_data_odata_m_request_dispatcher__WEBPACK_IMPORTED_MODULE_0__["default"])
-/* harmony export */ });
-/* harmony import */ var _internal_data_odata_m_request_dispatcher__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../__internal/data/odata/m_request_dispatcher */ "./node_modules/devextreme/esm/__internal/data/odata/m_request_dispatcher.js");
-/**
- * DevExtreme (esm/common/data/odata/request_dispatcher.js)
- * Version: 24.2.7
- * Build date: Mon Apr 28 2025
- *
- * Copyright (c) 2012 - 2025 Developer Express Inc. ALL RIGHTS RESERVED
- * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
- */
-
-
-
-/***/ }),
-
-/***/ "./node_modules/devextreme/esm/common/data/odata/store.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/devextreme/esm/common/data/odata/store.js ***!
-  \****************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* reexport safe */ _internal_data_odata_m_store__WEBPACK_IMPORTED_MODULE_0__["default"])
-/* harmony export */ });
-/* harmony import */ var _internal_data_odata_m_store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../__internal/data/odata/m_store */ "./node_modules/devextreme/esm/__internal/data/odata/m_store.js");
-/**
- * DevExtreme (esm/common/data/odata/store.js)
- * Version: 24.2.7
- * Build date: Mon Apr 28 2025
- *
- * Copyright (c) 2012 - 2025 Developer Express Inc. ALL RIGHTS RESERVED
- * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
- */
-
-
-
-/***/ }),
-
-/***/ "./node_modules/devextreme/esm/common/data/odata/utils.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/devextreme/esm/common/data/odata/utils.js ***!
-  \****************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   EdmLiteral: () => (/* reexport safe */ _internal_data_odata_m_utils__WEBPACK_IMPORTED_MODULE_0__.EdmLiteral),
-/* harmony export */   convertPrimitiveValue: () => (/* reexport safe */ _internal_data_odata_m_utils__WEBPACK_IMPORTED_MODULE_0__.convertPrimitiveValue),
-/* harmony export */   escapeServiceOperationParams: () => (/* reexport safe */ _internal_data_odata_m_utils__WEBPACK_IMPORTED_MODULE_0__.escapeServiceOperationParams),
-/* harmony export */   formatFunctionInvocationUrl: () => (/* reexport safe */ _internal_data_odata_m_utils__WEBPACK_IMPORTED_MODULE_0__.formatFunctionInvocationUrl),
-/* harmony export */   generateExpand: () => (/* reexport safe */ _internal_data_odata_m_utils__WEBPACK_IMPORTED_MODULE_0__.generateExpand),
-/* harmony export */   generateSelect: () => (/* reexport safe */ _internal_data_odata_m_utils__WEBPACK_IMPORTED_MODULE_0__.generateSelect),
-/* harmony export */   keyConverters: () => (/* reexport safe */ _internal_data_odata_m_utils__WEBPACK_IMPORTED_MODULE_0__.keyConverters),
-/* harmony export */   sendRequest: () => (/* reexport safe */ _internal_data_odata_m_utils__WEBPACK_IMPORTED_MODULE_0__.sendRequest),
-/* harmony export */   serializeKey: () => (/* reexport safe */ _internal_data_odata_m_utils__WEBPACK_IMPORTED_MODULE_0__.serializeKey),
-/* harmony export */   serializePropName: () => (/* reexport safe */ _internal_data_odata_m_utils__WEBPACK_IMPORTED_MODULE_0__.serializePropName),
-/* harmony export */   serializeValue: () => (/* reexport safe */ _internal_data_odata_m_utils__WEBPACK_IMPORTED_MODULE_0__.serializeValue)
-/* harmony export */ });
-/* harmony import */ var _internal_data_odata_m_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../__internal/data/odata/m_utils */ "./node_modules/devextreme/esm/__internal/data/odata/m_utils.js");
-/**
- * DevExtreme (esm/common/data/odata/utils.js)
  * Version: 24.2.7
  * Build date: Mon Apr 28 2025
  *
@@ -55608,6 +54007,32 @@ __webpack_require__.r(__webpack_exports__);
  * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
  */
 
+
+
+/***/ }),
+
+/***/ "./node_modules/devextreme/esm/data/custom_store.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/devextreme/esm/data/custom_store.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _common_data_custom_store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../common/data/custom_store */ "./node_modules/devextreme/esm/common/data/custom_store.js");
+/**
+ * DevExtreme (esm/data/custom_store.js)
+ * Version: 24.2.7
+ * Build date: Mon Apr 28 2025
+ *
+ * Copyright (c) 2012 - 2025 Developer Express Inc. ALL RIGHTS RESERVED
+ * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
+ */
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_common_data_custom_store__WEBPACK_IMPORTED_MODULE_0__.CustomStore);
 
 
 /***/ }),
@@ -70874,14 +69299,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _global__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../global */ "./Scripts/global.js");
 /* harmony import */ var devextreme_ui_text_box__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! devextreme/ui/text_box */ "./node_modules/devextreme/esm/ui/text_box.js");
 /* harmony import */ var devextreme_ui_select_box__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! devextreme/ui/select_box */ "./node_modules/devextreme/esm/ui/select_box.js");
-/* harmony import */ var devextreme_common_data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! devextreme/common/data */ "./node_modules/devextreme/esm/common/data.js");
+/* harmony import */ var devextreme_data_custom_store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! devextreme/data/custom_store */ "./node_modules/devextreme/esm/data/custom_store.js");
+/* harmony import */ var _Helpers_fetch_country__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Helpers/fetch-country */ "./Scripts/Helpers/fetch-country.js");
+/* harmony import */ var _Helpers_fetch_city__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Helpers/fetch-city */ "./Scripts/Helpers/fetch-city.js");
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 
 
 
 
+
+
 $(() => {
+
     $('#name').dxTextBox({
         label: 'Name',
         inputAttr: {'aria-label': 'Name'},
@@ -70924,49 +69354,54 @@ $(() => {
         height: '50',
     }).dxTextBox('instance');
 
-    fetch("https://countriesnow.space/api/v0.1/countries/positions")
-        .then(response => response.json())
-        .then(data => {
-            const countries = data.data;
-            $('#country').dxSelectBox({
-                dataSource: countries,
-                valueExpr: 'long',
-                displayExpr: 'name',
-                width: '30%',
-                height: '50',
-                label: 'Country',
-                inputAttr: {'aria-label': 'Country'},
-                labelMode: "static",
-                stylingMode: "outlined",
-                placeholder: null,
-            })
+    let countries = [];
+    let selectedCountry = null;
+    
+    $('#country').dxSelectBox({
+        dataSource: new devextreme_data_custom_store__WEBPACK_IMPORTED_MODULE_3__["default"]({
+            key: 'iso2',
+            load: async () => {
+                countries = await (0,_Helpers_fetch_country__WEBPACK_IMPORTED_MODULE_4__.fetchCountries)();
+                return countries;
+            }
+        }),
+        valueExpr: 'iso2',
+        displayExpr: 'name',
+        width: '30%',
+        height: '50',
+        label: 'Country',
+        inputAttr: {'aria-label': 'Country'},
+        labelMode: "static",
+        stylingMode: "outlined",
+        placeholder: null,
+        onValueChanged: (selection) => {
+            console.log("SELECTİON : ",selection);
+            selectedCountry = countries.find(country => country.iso2 === selection.value)
+            console.log('Country : ', selectedCountry);
+            citySelectBox.option('value', null);
+            citySelectBox.getDataSource().load();
+        }
+    }).dxSelectBox('instance');
 
+    const citySelectBox = $('#city').dxSelectBox({
+        dataSource: new devextreme_data_custom_store__WEBPACK_IMPORTED_MODULE_3__["default"]({
+            key: 'name',
+            load: async () => {
 
-        })
-
-    fetch("https://countriesnow.space/api/v0.1/countries/cities", {
-        method: "POST",
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({country: "Turkey"})
-    })
-        .then(res => res.json())
-        .then(data => {
-            const cities = data.data.map(item => ({'name' : item}));
-            
-            $('#city').dxSelectBox({
-                dataSource: cities,
-                valueExpr: 'name',
-                displayExpr: 'name',
-                width: '30%',
-                height: '50',
-                label: 'City',
-                inputAttr: {'aria-label': 'City'},
-                labelMode: "static",
-                stylingMode: "outlined",
-                placeholder: null,
-            })
-        });
-
+                return await (0,_Helpers_fetch_city__WEBPACK_IMPORTED_MODULE_5__.fetchCity)(selectedCountry.name);
+            }
+        }),
+        valueExpr: 'name',
+        displayExpr: 'name',
+        width: '30%',
+        height: '50',
+        label: 'City',
+        inputAttr: {'aria-label': 'City'},
+        labelMode: "static",
+        stylingMode: "outlined",
+        placeholder: null,
+    }).dxSelectBox('instance');
+    
 })
 })();
 
