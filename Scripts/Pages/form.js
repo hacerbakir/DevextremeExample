@@ -1,4 +1,4 @@
-﻿import '../global';
+﻿import 'global';
 import 'devextreme/ui/text_box';
 import 'devextreme/ui/select_box';
 import CustomStore from 'devextreme/data/custom_store';

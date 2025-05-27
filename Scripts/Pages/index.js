@@ -1,4 +1,4 @@
-﻿import '../global';
+﻿import 'global';
 import 'devextreme/ui/text_box';
 import 'devextreme/ui/button';
 import 'devextreme/ui/validator';

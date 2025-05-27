@@ -59524,7 +59524,7 @@ var __webpack_exports__ = {};
   !*** ./Scripts/Pages/index.js ***!
   \********************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _global__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../global */ "./Scripts/global.js");
+/* harmony import */ var global__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! global */ "./Scripts/global.js");
 /* harmony import */ var devextreme_ui_text_box__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! devextreme/ui/text_box */ "./node_modules/devextreme/esm/ui/text_box.js");
 /* harmony import */ var devextreme_ui_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! devextreme/ui/button */ "./node_modules/devextreme/esm/ui/button.js");
 /* harmony import */ var devextreme_ui_validator__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! devextreme/ui/validator */ "./node_modules/devextreme/esm/ui/validator.js");

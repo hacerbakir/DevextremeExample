@@ -28,6 +28,7 @@ module.exports = {
     resolve: {
         alias: {
             'inferno': 'inferno/dist/index.dev.esm.js',
+            'global': path.resolve(__dirname, './Scripts/global.js')
         },
     },
     entry: getEntries,

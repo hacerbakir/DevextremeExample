@@ -69296,7 +69296,7 @@ var __webpack_exports__ = {};
   !*** ./Scripts/Pages/form.js ***!
   \*******************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _global__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../global */ "./Scripts/global.js");
+/* harmony import */ var global__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! global */ "./Scripts/global.js");
 /* harmony import */ var devextreme_ui_text_box__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! devextreme/ui/text_box */ "./node_modules/devextreme/esm/ui/text_box.js");
 /* harmony import */ var devextreme_ui_select_box__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! devextreme/ui/select_box */ "./node_modules/devextreme/esm/ui/select_box.js");
 /* harmony import */ var devextreme_data_custom_store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! devextreme/data/custom_store */ "./node_modules/devextreme/esm/data/custom_store.js");
