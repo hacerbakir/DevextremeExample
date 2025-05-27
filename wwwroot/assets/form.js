@@ -69312,6 +69312,10 @@ __webpack_require__.r(__webpack_exports__);
 
 $(() => {
 
+    let countries = [];
+    let selectedCountry = null;
+    let citiesSelectBox;
+
     $('#name').dxTextBox({
         label: 'Name',
         inputAttr: {'aria-label': 'Name'},
@@ -69347,15 +69351,14 @@ $(() => {
 
     $('#phone').dxTextBox({
         label: 'Phone Number',
-        inputAttr: {'aria-label': 'Phone Number'},
+        inputAttr: { 'aria-label': 'Phone Number' },
         labelMode: "static",
         stylingMode: "outlined",
         width: '30%',
         height: '50',
-    }).dxTextBox('instance');
-
-    let countries = [];
-    let selectedCountry = null;
+        mask: '+\\9\\0 (500) 000-0000',
+        maskRules: { X: /[02-9]/ },
+    });
     
     $('#country').dxSelectBox({
         dataSource: new devextreme_data_custom_store__WEBPACK_IMPORTED_MODULE_3__["default"]({
@@ -69378,12 +69381,12 @@ $(() => {
             console.log("SELECTİON : ",selection);
             selectedCountry = countries.find(country => country.iso2 === selection.value)
             console.log('Country : ', selectedCountry);
-            citySelectBox.option('value', null);
-            citySelectBox.getDataSource().load();
+            citiesSelectBox.option('value', null);
+            citiesSelectBox.getDataSource().load();
         }
     }).dxSelectBox('instance');
 
-    const citySelectBox = $('#city').dxSelectBox({
+   $('#city').dxSelectBox({
         dataSource: new devextreme_data_custom_store__WEBPACK_IMPORTED_MODULE_3__["default"]({
             key: 'name',
             load: async () => {
@@ -69391,6 +69394,9 @@ $(() => {
                 return await (0,_Helpers_fetch_city__WEBPACK_IMPORTED_MODULE_5__.fetchCity)(selectedCountry.name);
             }
         }),
+        onInitialized(e) {
+            citiesSelectBox= e.component;
+        },
         valueExpr: 'name',
         displayExpr: 'name',
         width: '30%',
@@ -69401,7 +69407,6 @@ $(() => {
         stylingMode: "outlined",
         placeholder: null,
     }).dxSelectBox('instance');
-    
 })
 })();
 
