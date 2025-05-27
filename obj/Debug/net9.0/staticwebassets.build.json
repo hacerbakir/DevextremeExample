@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VMEqfzm/HTtiFkj6lLOexW7yEIdzDUD4XK0xPk9c2Vg=",
+  "Hash": "1pHMas+3XYIYPcbF9GK3LwhsaL6rdxJNf9auebtefTI=",
   "Source": "DevextremeExample",
   "BasePath": "_content/DevextremeExample",
   "Mode": "Default",
@@ -395,12 +395,12 @@
       "OriginalItemSpec": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\7dmplllh8b-5ipweew5fc.gz",
+      "Identity": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\7dmplllh8b-xjtx8gv73c.gz",
       "SourceId": "DevextremeExample",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/DevextremeExample",
-      "RelativePath": "assets/css/dxform#[.{fingerprint=5ipweew5fc}]?.css.gz",
+      "RelativePath": "assets/css/dxform#[.{fingerprint=xjtx8gv73c}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -409,8 +409,8 @@
       "RelatedAsset": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\dxform.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "5ipweew5fc",
-      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "Fingerprint": "jx90k75661",
+      "Integrity": "RxJG2dmNHdclTYTTloUQHP+GIhGPiPOLIqSvBElDq1Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\dxform.css"
@@ -456,6 +456,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Identity": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\9eucg0dvhw-en3y4qjlgb.gz",
+      "SourceId": "DevextremeExample",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/DevextremeExample",
+      "RelativePath": "assets/example-form#[.{fingerprint=en3y4qjlgb}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\example-form.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "amp2cm9p1k",
+      "Integrity": "zp0jOJA+qPaNaY1dethwFTIzyXcUCKkXf5i3aNuIlRU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\example-form.js"
     },
     {
       "Identity": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\abag2edfpf-keugtjm085.gz",
@@ -687,27 +708,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
-    },
-    {
-      "Identity": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\gav7jm3740-mokuboemr1.gz",
-      "SourceId": "DevextremeExample",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\",
-      "BasePath": "_content/DevextremeExample",
-      "RelativePath": "assets/dxform#[.{fingerprint=mokuboemr1}]?.js.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\dxform.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "c4ugs0p42z",
-      "Integrity": "hNcWv25kfx2/pueGEruieUCDUbFxPd4PhNUTwD7A2go=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\dxform.js"
     },
     {
       "Identity": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\gwttsof8la-48y08845bh.gz",
@@ -1044,6 +1044,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Identity": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\omc50heqpd-fieg2w6y6e.gz",
+      "SourceId": "DevextremeExample",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/DevextremeExample",
+      "RelativePath": "assets/example-form.js#[.{fingerprint=fieg2w6y6e}]?.map.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\example-form.js.map",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "sw56gvmldi",
+      "Integrity": "bO9DugmrTBZfYAn6T8pYUGIUuZuMB3O66tIDRvGEdts=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\example-form.js.map"
     },
     {
       "Identity": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\on72ytafir-37zwdz48d5.gz",
@@ -1648,8 +1669,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5ipweew5fc",
-      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "Fingerprint": "xjtx8gv73c",
+      "Integrity": "I/R2SvYT2iH3i/4Ka6q+t4yLVuCEnfCCkk++jfiHv30=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\css\\dxform.css"
@@ -2180,6 +2201,27 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\icons\\fonts\\bootstrap-icons.woff2"
     },
     {
+      "Identity": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\images\\dog.jpg",
+      "SourceId": "DevextremeExample",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\",
+      "BasePath": "_content/DevextremeExample",
+      "RelativePath": "assets/css/images/dog#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ka2a3dl6kh",
+      "Integrity": "HDE47anumZEKANpNKJVDVimV4JAnOJ2cI8yR2RAGG+Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\css\\images\\dog.jpg"
+    },
+    {
       "Identity": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\main.css",
       "SourceId": "DevextremeExample",
       "SourceType": "Discovered",
@@ -2201,12 +2243,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\main.css"
     },
     {
-      "Identity": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\dxform.js",
+      "Identity": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\example-form.js",
       "SourceId": "DevextremeExample",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\",
       "BasePath": "_content/DevextremeExample",
-      "RelativePath": "assets/dxform#[.{fingerprint}]?.js",
+      "RelativePath": "assets/example-form#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2215,11 +2257,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "mokuboemr1",
-      "Integrity": "ypA1zO+oGjrZtKMgqffFaTCTrumr5d5dRWFMuS02GGQ=",
+      "Fingerprint": "en3y4qjlgb",
+      "Integrity": "Bh1Xs3Cia6/Gd0bM6Z+QWdU5hsmzkt1VtkFo/1V1EPo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\dxform.js"
+      "OriginalItemSpec": "wwwroot\\assets\\example-form.js"
+    },
+    {
+      "Identity": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\example-form.js.map",
+      "SourceId": "DevextremeExample",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\",
+      "BasePath": "_content/DevextremeExample",
+      "RelativePath": "assets/example-form.js#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fieg2w6y6e",
+      "Integrity": "ibBPZNEpQm+ZYNWb3jPz1b46rmRbuTV2SLE1Cd3bdGc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\example-form.js.map"
     },
     {
       "Identity": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\form.js",
@@ -4269,13 +4332,13 @@
       ]
     },
     {
-      "Route": "assets/css/dxform.5ipweew5fc.css",
-      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\7dmplllh8b-5ipweew5fc.gz",
+      "Route": "assets/css/dxform.css",
+      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\7dmplllh8b-xjtx8gv73c.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "1.000000000000"
+          "Quality": "0.004366812227"
         }
       ],
       "ResponseHeaders": [
@@ -4285,19 +4348,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "0"
+          "Value": "228"
         },
         {
           "Name": "ETag",
-          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+          "Value": "\"RxJG2dmNHdclTYTTloUQHP+GIhGPiPOLIqSvBElDq1Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 12:16:30 GMT"
+          "Value": "Tue, 27 May 2025 14:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -4313,26 +4376,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+          "Value": "W/\"I/R2SvYT2iH3i/4Ka6q+t4yLVuCEnfCCkk++jfiHv30=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "5ipweew5fc"
-        },
-        {
-          "Name": "label",
-          "Value": "assets/css/dxform.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+          "Value": "sha256-I/R2SvYT2iH3i/4Ka6q+t4yLVuCEnfCCkk++jfiHv30="
         }
       ]
     },
     {
-      "Route": "assets/css/dxform.5ipweew5fc.css",
+      "Route": "assets/css/dxform.css",
       "AssetFile": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\dxform.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4342,7 +4397,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "0"
+          "Value": "345"
         },
         {
           "Name": "Content-Type",
@@ -4350,11 +4405,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+          "Value": "\"I/R2SvYT2iH3i/4Ka6q+t4yLVuCEnfCCkk++jfiHv30=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 12:16:30 GMT"
+          "Value": "Tue, 27 May 2025 14:10:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-I/R2SvYT2iH3i/4Ka6q+t4yLVuCEnfCCkk++jfiHv30="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/dxform.css.gz",
+      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\7dmplllh8b-xjtx8gv73c.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "228"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RxJG2dmNHdclTYTTloUQHP+GIhGPiPOLIqSvBElDq1Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 14:10:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RxJG2dmNHdclTYTTloUQHP+GIhGPiPOLIqSvBElDq1Y="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/dxform.xjtx8gv73c.css",
+      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\7dmplllh8b-xjtx8gv73c.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004366812227"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "228"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RxJG2dmNHdclTYTTloUQHP+GIhGPiPOLIqSvBElDq1Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 14:10:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"I/R2SvYT2iH3i/4Ka6q+t4yLVuCEnfCCkk++jfiHv30=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xjtx8gv73c"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/css/dxform.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-I/R2SvYT2iH3i/4Ka6q+t4yLVuCEnfCCkk++jfiHv30="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/dxform.xjtx8gv73c.css",
+      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\dxform.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "345"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I/R2SvYT2iH3i/4Ka6q+t4yLVuCEnfCCkk++jfiHv30=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 14:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4364,7 +4564,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5ipweew5fc"
+          "Value": "xjtx8gv73c"
         },
         {
           "Name": "label",
@@ -4372,13 +4572,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+          "Value": "sha256-I/R2SvYT2iH3i/4Ka6q+t4yLVuCEnfCCkk++jfiHv30="
         }
       ]
     },
     {
-      "Route": "assets/css/dxform.5ipweew5fc.css.gz",
-      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\7dmplllh8b-5ipweew5fc.gz",
+      "Route": "assets/css/dxform.xjtx8gv73c.css.gz",
+      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\7dmplllh8b-xjtx8gv73c.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4387,7 +4587,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "0"
+          "Value": "228"
         },
         {
           "Name": "Content-Type",
@@ -4395,11 +4595,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+          "Value": "\"RxJG2dmNHdclTYTTloUQHP+GIhGPiPOLIqSvBElDq1Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 12:16:30 GMT"
+          "Value": "Tue, 27 May 2025 14:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4417,7 +4617,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5ipweew5fc"
+          "Value": "xjtx8gv73c"
         },
         {
           "Name": "label",
@@ -4425,144 +4625,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
-        }
-      ]
-    },
-    {
-      "Route": "assets/css/dxform.css",
-      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\7dmplllh8b-5ipweew5fc.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "1.000000000000"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "0"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 12:16:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
-        }
-      ]
-    },
-    {
-      "Route": "assets/css/dxform.css",
-      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\dxform.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "0"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 12:16:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
-        }
-      ]
-    },
-    {
-      "Route": "assets/css/dxform.css.gz",
-      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\7dmplllh8b-5ipweew5fc.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "0"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 12:16:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+          "Value": "sha256-RxJG2dmNHdclTYTTloUQHP+GIhGPiPOLIqSvBElDq1Y="
         }
       ]
     },
@@ -7049,6 +7112,88 @@
       ]
     },
     {
+      "Route": "assets/css/images/dog.jpg",
+      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\images\\dog.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "121700"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HDE47anumZEKANpNKJVDVimV4JAnOJ2cI8yR2RAGG+Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 13:56:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HDE47anumZEKANpNKJVDVimV4JAnOJ2cI8yR2RAGG+Y="
+        }
+      ]
+    },
+    {
+      "Route": "assets/css/images/dog.ka2a3dl6kh.jpg",
+      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\images\\dog.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "121700"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HDE47anumZEKANpNKJVDVimV4JAnOJ2cI8yR2RAGG+Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 13:56:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ka2a3dl6kh"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/css/images/dog.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HDE47anumZEKANpNKJVDVimV4JAnOJ2cI8yR2RAGG+Y="
+        }
+      ]
+    },
+    {
       "Route": "assets/css/main.css",
       "AssetFile": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\85npa05z3e-rxykqd2fmm.gz",
       "Selectors": [
@@ -7347,13 +7492,13 @@
       ]
     },
     {
-      "Route": "assets/dxform.js",
-      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\gav7jm3740-mokuboemr1.gz",
+      "Route": "assets/example-form.en3y4qjlgb.js",
+      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\9eucg0dvhw-en3y4qjlgb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.008474576271"
+          "Quality": "0.000001711119"
         }
       ],
       "ResponseHeaders": [
@@ -7363,19 +7508,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "117"
+          "Value": "584412"
         },
         {
           "Name": "ETag",
-          "Value": "\"hNcWv25kfx2/pueGEruieUCDUbFxPd4PhNUTwD7A2go=\""
+          "Value": "\"zp0jOJA+qPaNaY1dethwFTIzyXcUCKkXf5i3aNuIlRU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 12:23:31 GMT"
+          "Value": "Tue, 27 May 2025 14:22:17 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -7391,19 +7536,27 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"ypA1zO+oGjrZtKMgqffFaTCTrumr5d5dRWFMuS02GGQ=\""
+          "Value": "W/\"Bh1Xs3Cia6/Gd0bM6Z+QWdU5hsmzkt1VtkFo/1V1EPo=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "en3y4qjlgb"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/example-form.js"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-ypA1zO+oGjrZtKMgqffFaTCTrumr5d5dRWFMuS02GGQ="
+          "Value": "sha256-Bh1Xs3Cia6/Gd0bM6Z+QWdU5hsmzkt1VtkFo/1V1EPo="
         }
       ]
     },
     {
-      "Route": "assets/dxform.js",
-      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\dxform.js",
+      "Route": "assets/example-form.en3y4qjlgb.js",
+      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\example-form.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7412,7 +7565,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "170"
+          "Value": "3716151"
         },
         {
           "Name": "Content-Type",
@@ -7420,27 +7573,35 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ypA1zO+oGjrZtKMgqffFaTCTrumr5d5dRWFMuS02GGQ=\""
+          "Value": "\"Bh1Xs3Cia6/Gd0bM6Z+QWdU5hsmzkt1VtkFo/1V1EPo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 12:23:31 GMT"
+          "Value": "Tue, 27 May 2025 14:22:17 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "en3y4qjlgb"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/example-form.js"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-ypA1zO+oGjrZtKMgqffFaTCTrumr5d5dRWFMuS02GGQ="
+          "Value": "sha256-Bh1Xs3Cia6/Gd0bM6Z+QWdU5hsmzkt1VtkFo/1V1EPo="
         }
       ]
     },
     {
-      "Route": "assets/dxform.js.gz",
-      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\gav7jm3740-mokuboemr1.gz",
+      "Route": "assets/example-form.en3y4qjlgb.js.gz",
+      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\9eucg0dvhw-en3y4qjlgb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7449,7 +7610,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "117"
+          "Value": "584412"
         },
         {
           "Name": "Content-Type",
@@ -7457,15 +7618,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hNcWv25kfx2/pueGEruieUCDUbFxPd4PhNUTwD7A2go=\""
+          "Value": "\"zp0jOJA+qPaNaY1dethwFTIzyXcUCKkXf5i3aNuIlRU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 12:23:31 GMT"
+          "Value": "Tue, 27 May 2025 14:22:17 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -7478,19 +7639,27 @@
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "en3y4qjlgb"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/example-form.js.gz"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-hNcWv25kfx2/pueGEruieUCDUbFxPd4PhNUTwD7A2go="
+          "Value": "sha256-zp0jOJA+qPaNaY1dethwFTIzyXcUCKkXf5i3aNuIlRU="
         }
       ]
     },
     {
-      "Route": "assets/dxform.mokuboemr1.js",
-      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\gav7jm3740-mokuboemr1.gz",
+      "Route": "assets/example-form.js",
+      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\9eucg0dvhw-en3y4qjlgb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.008474576271"
+          "Quality": "0.000001711119"
         }
       ],
       "ResponseHeaders": [
@@ -7500,19 +7669,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "117"
+          "Value": "584412"
         },
         {
           "Name": "ETag",
-          "Value": "\"hNcWv25kfx2/pueGEruieUCDUbFxPd4PhNUTwD7A2go=\""
+          "Value": "\"zp0jOJA+qPaNaY1dethwFTIzyXcUCKkXf5i3aNuIlRU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 12:23:31 GMT"
+          "Value": "Tue, 27 May 2025 14:22:17 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -7528,27 +7697,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"ypA1zO+oGjrZtKMgqffFaTCTrumr5d5dRWFMuS02GGQ=\""
+          "Value": "W/\"Bh1Xs3Cia6/Gd0bM6Z+QWdU5hsmzkt1VtkFo/1V1EPo=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "mokuboemr1"
-        },
-        {
-          "Name": "label",
-          "Value": "assets/dxform.js"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-ypA1zO+oGjrZtKMgqffFaTCTrumr5d5dRWFMuS02GGQ="
+          "Value": "sha256-Bh1Xs3Cia6/Gd0bM6Z+QWdU5hsmzkt1VtkFo/1V1EPo="
         }
       ]
     },
     {
-      "Route": "assets/dxform.mokuboemr1.js",
-      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\dxform.js",
+      "Route": "assets/example-form.js",
+      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\example-form.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7557,7 +7718,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "170"
+          "Value": "3716151"
         },
         {
           "Name": "Content-Type",
@@ -7565,11 +7726,111 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ypA1zO+oGjrZtKMgqffFaTCTrumr5d5dRWFMuS02GGQ=\""
+          "Value": "\"Bh1Xs3Cia6/Gd0bM6Z+QWdU5hsmzkt1VtkFo/1V1EPo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 12:23:31 GMT"
+          "Value": "Tue, 27 May 2025 14:22:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bh1Xs3Cia6/Gd0bM6Z+QWdU5hsmzkt1VtkFo/1V1EPo="
+        }
+      ]
+    },
+    {
+      "Route": "assets/example-form.js.fieg2w6y6e.map",
+      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\omc50heqpd-fieg2w6y6e.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000001681319"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "594770"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bO9DugmrTBZfYAn6T8pYUGIUuZuMB3O66tIDRvGEdts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 14:22:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ibBPZNEpQm+ZYNWb3jPz1b46rmRbuTV2SLE1Cd3bdGc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fieg2w6y6e"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/example-form.js.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ibBPZNEpQm+ZYNWb3jPz1b46rmRbuTV2SLE1Cd3bdGc="
+        }
+      ]
+    },
+    {
+      "Route": "assets/example-form.js.fieg2w6y6e.map",
+      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\example-form.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3494821"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ibBPZNEpQm+ZYNWb3jPz1b46rmRbuTV2SLE1Cd3bdGc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 14:22:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7579,21 +7840,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "mokuboemr1"
+          "Value": "fieg2w6y6e"
         },
         {
           "Name": "label",
-          "Value": "assets/dxform.js"
+          "Value": "assets/example-form.js.map"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ypA1zO+oGjrZtKMgqffFaTCTrumr5d5dRWFMuS02GGQ="
+          "Value": "sha256-ibBPZNEpQm+ZYNWb3jPz1b46rmRbuTV2SLE1Cd3bdGc="
         }
       ]
     },
     {
-      "Route": "assets/dxform.mokuboemr1.js.gz",
-      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\gav7jm3740-mokuboemr1.gz",
+      "Route": "assets/example-form.js.fieg2w6y6e.map.gz",
+      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\omc50heqpd-fieg2w6y6e.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7602,19 +7863,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "117"
+          "Value": "594770"
         },
         {
           "Name": "Content-Type",
-          "Value": "text/javascript"
+          "Value": "text/plain"
         },
         {
           "Name": "ETag",
-          "Value": "\"hNcWv25kfx2/pueGEruieUCDUbFxPd4PhNUTwD7A2go=\""
+          "Value": "\"bO9DugmrTBZfYAn6T8pYUGIUuZuMB3O66tIDRvGEdts=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 12:23:31 GMT"
+          "Value": "Tue, 27 May 2025 14:22:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7632,15 +7893,197 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "mokuboemr1"
+          "Value": "fieg2w6y6e"
         },
         {
           "Name": "label",
-          "Value": "assets/dxform.js.gz"
+          "Value": "assets/example-form.js.map.gz"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hNcWv25kfx2/pueGEruieUCDUbFxPd4PhNUTwD7A2go="
+          "Value": "sha256-bO9DugmrTBZfYAn6T8pYUGIUuZuMB3O66tIDRvGEdts="
+        }
+      ]
+    },
+    {
+      "Route": "assets/example-form.js.gz",
+      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\9eucg0dvhw-en3y4qjlgb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "584412"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zp0jOJA+qPaNaY1dethwFTIzyXcUCKkXf5i3aNuIlRU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 14:22:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zp0jOJA+qPaNaY1dethwFTIzyXcUCKkXf5i3aNuIlRU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/example-form.js.map",
+      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\omc50heqpd-fieg2w6y6e.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000001681319"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "594770"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bO9DugmrTBZfYAn6T8pYUGIUuZuMB3O66tIDRvGEdts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 14:22:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ibBPZNEpQm+ZYNWb3jPz1b46rmRbuTV2SLE1Cd3bdGc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ibBPZNEpQm+ZYNWb3jPz1b46rmRbuTV2SLE1Cd3bdGc="
+        }
+      ]
+    },
+    {
+      "Route": "assets/example-form.js.map",
+      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\example-form.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3494821"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ibBPZNEpQm+ZYNWb3jPz1b46rmRbuTV2SLE1Cd3bdGc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 14:22:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ibBPZNEpQm+ZYNWb3jPz1b46rmRbuTV2SLE1Cd3bdGc="
+        }
+      ]
+    },
+    {
+      "Route": "assets/example-form.js.map.gz",
+      "AssetFile": "D:\\DevExtreme\\DevextremeExample\\obj\\Debug\\net9.0\\compressed\\omc50heqpd-fieg2w6y6e.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "594770"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bO9DugmrTBZfYAn6T8pYUGIUuZuMB3O66tIDRvGEdts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 14:22:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bO9DugmrTBZfYAn6T8pYUGIUuZuMB3O66tIDRvGEdts="
         }
       ]
     },

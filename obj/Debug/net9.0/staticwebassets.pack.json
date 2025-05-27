@@ -113,12 +113,20 @@
       "PackagePath": "staticwebassets\\assets\\css\\icons\\fonts\\bootstrap-icons.woff2"
     },
     {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\images\\dog.jpg",
+      "PackagePath": "staticwebassets\\assets\\css\\images\\dog.jpg"
+    },
+    {
       "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\main.css",
       "PackagePath": "staticwebassets\\assets\\css\\main.css"
     },
     {
-      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\dxform.js",
-      "PackagePath": "staticwebassets\\assets\\dxform.js"
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\example-form.js",
+      "PackagePath": "staticwebassets\\assets\\example-form.js"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\example-form.js.map",
+      "PackagePath": "staticwebassets\\assets\\example-form.js.map"
     },
     {
       "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\form.js",
