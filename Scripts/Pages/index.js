@@ -7,6 +7,12 @@ import 'devextreme/ui/validation_group';
 $(() => {
     const validationGroup = 'login';
     
+    const passeordViewEdit =(name, button) => {
+        const textBox = $(`#${name}`).dxTextBox('instance');
+        textBox.option('mode', textBox.option('mode')=== 'password' ? 'text' : 'password' );
+        button.option('icon', button.option('icon')=== 'eyeopen' ? 'eyeclose' : 'eyeopen' );
+    }
+    
     $('#textBoxEmail').dxTextBox({
         label: 'Email',
         inputAttr: { 'aria-label': 'Email' },
@@ -39,10 +45,7 @@ $(() => {
             options: {
                 icon: 'eyeopen',
                 stylingMode: 'text',
-                onClick() {
-                    const textBoxPasswordId = $('#textBoxPassword');
-                    textBoxPasswordId.option('mode', textBoxPasswordId.option('mode') === 'text' ? 'password' : 'text');
-                },
+                onClick: (e) => passeordViewEdit('textBoxPassword', e.component),
             },
         }],
         onValueChanged: (value) => {
@@ -64,6 +67,15 @@ $(() => {
         placeholder: 'Confirm Password',
         width: '100%',
         height: 50,
+        buttons: [{
+            name: 'passwordConfirm',
+            location: 'after',
+            options: {
+                icon: 'eyeopen',
+                stylingMode: 'text',
+                onClick: (e) => passeordViewEdit('textBoxConfirmPassword', e.component),
+            },
+        }],
     }).dxValidator({
         validationGroup: validationGroup,
         validationRules: [

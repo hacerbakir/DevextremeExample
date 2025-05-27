@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\assets\\css\\dx.fluent.saas.light.css"
     },
     {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\dxform.css",
+      "PackagePath": "staticwebassets\\assets\\css\\dxform.css"
+    },
+    {
       "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\fonts\\Roboto-300.ttf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\Roboto-300.ttf"
     },
@@ -111,6 +115,10 @@
     {
       "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\css\\main.css",
       "PackagePath": "staticwebassets\\assets\\css\\main.css"
+    },
+    {
+      "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\dxform.js",
+      "PackagePath": "staticwebassets\\assets\\dxform.js"
     },
     {
       "Id": "D:\\DevExtreme\\DevextremeExample\\wwwroot\\assets\\form.js",
